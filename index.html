@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Столовая.ру</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="header_mobile"><img src="images/меню.png" alt="меню"/></div>
+<header class="header">
+    <nav class="header__navigation">
+        <a>Компания</a>
+        <a>Портфолио</a>
+        <a>Проектирование</a>
+        <div class="header__vertical-line"></div>
+        <a>Ресторанам</a>
+        <a>Застройщикам</a>
+        <a>Гос.заказчикам</a>
+        <a>Таблет-питание</a>
+        <div class="header__vertical-line"></div>
+        <a><span>Сервис</span><img src="images/icons8-поддержка-50.png" alt="cepвис"/></a>
+        <a><span>Контакты</span><img src="images/icons8-контакты-48.png" alt="контакты"/></a>
+        <div id="email"><img src="./images/email%20(1).png" alt="Email"/><span>info@stolovay.ru</span></div>
+
+        <div id="copy">Скопировать</div>
+
+        <div id="phone"><img src="./images/telephone-handle.png" alt="Phone"/><span>8 495 790-72-05</span></div>
+
+        <div id="phone-hover">
+            <div>
+                <h4>8 495 790-72-05</h4>
+                <span class="phone-hover__gray-text">Мы принимаем звонки без выходных.</span>
+                <span>Выберите способ связи:</span>
+                <div>
+                    <div>
+                        <img src="images/telephone.png" alt="Телефон"/><span>Мобильный</span>
+                    </div>
+                    <div>
+                        <img src="images/вайбер.png" alt="Вайбер"/><span>Viber</span>
+                    </div>
+                    <div>
+                        <img src="images/телеграм.png" alt="Телеграм"/><span>Telegram</span>
+                    </div>
+                    <div>
+                        <img src="images/вотсап.png" alt="Вотсап"/><span>Whatsapp</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <strong>Обратный звонок:</strong>
+                <span class="phone-hover__gray-text">Мы перезвоним вам в течении часа</span>
+                <form>
+                    <label>
+                        Имя:
+                    </label>
+                    <input type="text"/>
+                    <label>
+                        Телефон:
+                    </label>
+                    <input type="text"/>
+                    <button>Отправить</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="search-block">
+    <a class="search-block__logo">
+        <img src="./images/logo.png" alt="logo"/>
+        <div>
+            <h1>Столовая.РУ</h1>
+            <span>Создание пищеблоков</span>
+        </div>
+    </a>
+    <div class="search-block__search">
+        <a>
+            <button>Все &#9660;</button>
+            <div class="search-block__search-hover">
+                <h5>Выбирите категорию:</h5>
+                <span>Тепловое</span>
+                <span>Холодильное</span>
+                <span>Электромеханическое</span>
+                <span>Посудомоечное</span>
+                <span>Хлебопекарное</span>
+                <span>Линии раздачи</span>
+                <span>Нейтральное</span>
+                <span>Для фаст фуда</span>
+                <span>Для залов</span>
+                <span>Вспомогательное</span>
+                <span>Для магазинов</span>
+            </div>
+        </a>
+        <input type="text"/>
+        <a>
+            <button><img src="images/search.png" alt="search"/></button>
+        </a>
+    </div>
+    <div class="search-block_mobile"><img src="images/поиск.png" alt="Найти">
+    </div>
+    <div class="search-block_mobile"><img src="images/telephone%20(2).png" alt="Вызов"/></div>
+    <a class="search-block__portal">
+        <img src="images/portalpostavschikov1.png" alt="portal"/>
+        <img src="images/portalpostavschikov.png" alt="portal" class="search-block__img_hover"/>
+        <div>
+            <span>Мы на портале </span>
+            <span>поставщиков</span>
+        </div>
+    </a>
+    <a class="search-block__basket">
+        <div>
+            <span class="search-block__count_orange">12</span>
+            <img src="images/cart.png" alt="basket" class="search-block__img"/>
+            <img src="images/shopping-cart-white.png" alt="basket" class="search-block__img_hover"/>
+            <img src="images/cart2.png " alt="basket" class="search-block__img_mobile"/>
+        </div>
+        <div>
+            <span>Сумма</span>
+            <span>150 000 руб.</span>
+        </div>
+    </a>
+</div>
+
+<div class="categories-block_mobile">
+    <span>Оборудование</span><span>→</span>
+</div>
+<div class="categories__hot-hover toggle-click">
+    <div>
+        <a> <span>Парконвенкоматы</span><span>&#62;</span></a>
+        <a><span>Конвекционные печи</span><span>&#62;</span></a>
+        <a> <span>Плиты</span><span>&#62;</span></a>
+        <a> <span>Электросковороды</span><span>&#62;</span></a>
+        <a><span>Шкафы и жарочные</span><span>&#62;</span></a>
+        <a> <span>Котлы</span><span>&#62;</span></a>
+        <a><span>Фритюрницы</span><span>&#62;</span></a>
+        <a><span>Жарочные поверхности</span><span>&#62;</span></a>
+        <a> <span>Кипятильники</span><span>&#62;</span></a>
+        <a><span>Водонагреватели</span><span>&#62;</span></a>
+        <a><span>Столы тепловые</span><span>&#62;</span></a>
+        <a><span>Шкафы тепловые</span><span>&#62;</span></a>
+    </div>
+    <div>
+        <div>
+            <span>Бойлерные</span>
+            <span>Инжекторные</span>
+            <span>Все сразу</span>
+        </div>
+        <div>
+            <h5>Бренды</h5>
+            <span>Abat</span>
+            <span>Unox</span>
+            <span>Проммаш</span>
+            <span>Atesy</span>
+            <span>Rational</span>
+        </div>
+        <div>
+            <h5>Страны</h5>
+            <div><img src="images/Flag_of_Spain.png" alt="Spain"/><span>Spain</span></div>
+            <div><img src="images/Flag_of_Switzerland_(Pantone).png" alt="Switzerland"/><span>Italy</span></div>
+            <div><img src="images/Flag_of_Germany.png" alt="Germany"/><span>Germany</span></div>
+            <div><img src="images/Flag_of_Turkey.png" alt="Turkey"/><span>Turkey</span></div>
+        </div>
+    </div>
+    <div>
+        <img src="images/похоженапечь.png" alt="Парконвенкоматы"/>
+        <span>Парконвенкоматы</span>
+        <button>Все сразу</button>
+    </div>
+</div>
+
+<div class="categories__hot-hover categories__cold-hover">
+    <div>
+        <a> <span>Холодильные шкафы</span><span>&#62;</span></a>
+        <a><span>Камеры холодильные</span><span>&#62;</span></a>
+        <a> <span>Моноблоки</span><span>&#62;</span></a>
+        <a> <span>Сплит-системы</span><span>&#62;</span></a>
+        <a><span>Столы холодильные</span><span>&#62;</span></a>
+        <a> <span>Витрины холодильные</span><span>&#62;</span></a>
+        <a><span>Горки холодильные</span><span>&#62;</span></a>
+        <a><span>Бонеты</span><span>&#62;</span></a>
+        <a> <span>Лари морозильные</span><span>&#62;</span></a>
+        <a><span>Льдогенераторы</span><span>&#62;</span></a>
+        <a><span>Шкафы шоковой заморозки</span><span>&#62;</span></a>
+        <a><span>Кегераторы</span><span>&#62;</span></a>
+    </div>
+    <div>
+        <div>
+            <span>Среднетемпературные</span>
+            <span>Низкотемпературные</span>
+            <span>Универсальные</span>
+            <span>Комбинированные</span>
+            <span>Барные</span>
+            <span>Все сразу</span>
+        </div>
+        <div>
+            <h5>Страны</h5>
+            <div><img src="images/Flag_of_Spain.png" alt="Spain"/><span>Spain</span></div>
+            <div><img src="images/Flag_of_Switzerland_(Pantone).png" alt="Switzerland"/><span>Italy</span></div>
+            <div><img src="images/Flag_of_Germany.png" alt="Germany"/><span>Germany</span></div>
+            <div><img src="images/Flag_of_Turkey.png" alt="Turkey"/><span>Turkey</span></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h5>Бренды</h5>
+            <span>ELECTROLUX</span>
+            <span>Gastorag</span>
+            <span>Ариада</span>
+            <span>Abat</span>
+            <span>Полюс</span>
+            <span>MXM</span>
+            <span>POLAR</span>
+            <span>Премьер</span>
+            <span>Бирюса</span>
+            <span>Россия</span>
+            <span>TEFCOLD</span>
+        </div>
+    </div>
+    <div>
+        <img src="images/cold.png" alt="Холодильник"/>
+        <span>Холодильное оборудование</span>
+        <button>Все сразу</button>
+    </div>
+</div>
+
+
+<div class="categories-block">
+    <div>
+        <img src="images/Слой%207.png" alt="Печь"/>
+        <span>Тепловое</span>
+    </div>
+    <div>
+        <img src="images/Слой%209.png" alt="Холодильник"/>
+        <span>Холодильное</span>
+    </div>
+    <div>
+        <img src="images/Слой%208.png" alt="Электромеханика"/>
+        <span>Электромеханическое</span>
+    </div>
+    <div>
+        <img src="images/Слой%2071.png" alt="Посудомоечная машина"/>
+        <span>Посудомоечное</span>
+    </div>
+    <div>
+        <img src="images/Слой%2072.png" alt="Хлебопечь"/>
+        <span>Хлебопекарное</span>
+    </div>
+    <div>
+        <img src="images/Слой%2073.png" alt="Линия раздачи"/>
+        <span>Линии раздачи</span>
+    </div>
+    <div>
+        <img src="images/Слой%2074.png" alt="Тележка"/>
+        <span>Нейтральное</span>
+    </div>
+    <div>
+        <img src="images/Слой%2075.png" alt="Фритюр"/>
+        <span>Для фаст фуда</span>
+    </div>
+    <div>
+        <img src="images/Слой%2076.png" alt="Стул"/>
+        <span>Для залов</span>
+    </div>
+    <div>
+        <img src="images/Слой%2077.png" alt="Весы"/>
+        <span>Вспомогательное</span>
+    </div>
+    <div>
+        <img src="images/Слой%2078.png" alt="Фото недоступно :("/>
+        <span>Для магазинов</span>
+    </div>
+</div>
+<div class="main-block">
+    <div class="targeted-offers-block">
+        <h2>
+            Целевые предложения
+        </h2>
+        <a><span>Кафе, барам, ресторанам</span> <span>&#62;</span></a>
+        <a><span>Детским садам и школам</span> <span>&#62;</span></a>
+        <a><span>Таблет-питание</span> <span>&#62;</span></a>
+        <a><span>Для столовых</span> <span>&#62;</span></a>
+        <a><span>Для пищеблоков</span><span>&#62;</span></a>
+        <a><span>Государственным заказам</span><span>&#62;</span></a>
+        <a><span>Для магазинов</span><span>&#62;</span></a>
+        <a><span>Для войсковых частей </span><span>&#62;</span></a>
+        <a><span>Все предложения</span><span>&#62;</span></a>
+
+    </div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/Портфолио1.png" alt="Портфолио"/></div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<div class="sale-block">
+    <img src="images/giftbox.png" alt="gift"/>
+    <span>Самые низкие цены</span>
+    <h1>Распродажа</h1>
+    <span>Каталог распродаж &#62;</span>
+</div>
+<script src="swiper.js"></script>
+<div class="body">
+    <div class="brands-block">
+        <img src="images/logo25.png" alt="Abat"/>
+        <div></div>
+        <img src="images/logo24.png" alt="atesy"/>
+        <div></div>
+        <img src="images/logo23.png" alt="hicold"/>
+        <div></div>
+        <img src="images/logo22.png" alt="rational"/>
+        <div></div>
+        <img src="images/logo21.png" alt="simeco"/>
+        <div></div>
+        <span>Все бренды</span>
+    </div>
+</div>
+</body>
+</html>

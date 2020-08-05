@@ -1,0 +1,84 @@
+@import "vars";
+.body{
+  padding:0 190px;
+  margin:0;
+  position:relative;
+  top:-950px;
+}
+.targeted-offers-block{
+  display:flex;
+  flex-direction:column;
+  width: 305px;
+  height:475px;
+  background-color: white;
+  margin:20px 0 0 10%;
+  padding-top:14px;
+  font-weight:100;
+
+  & a{
+    padding:6px 0 0 0;
+    margin:8px 25px;
+    border-bottom: 1px solid #eeeeee;
+    display:flex;
+    justify-content:space-between;
+  }
+  & a:last-child{
+    border-bottom:none;
+  }
+  & span{
+    font-size:17px;
+    font-family:@font;
+  }
+  & a span:last-child{
+    color:#b7b7b7;
+  }
+}
+.swiper-slide{
+  background-color:#fff;
+}
+.swiper-container {
+  top:-488px;
+  width: 900px;
+  height: 475px;
+  margin:0;
+  left:5px;
+}
+.sale-block{
+  width:300px;
+  height:473px;
+  border:2px solid @orange;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start;
+  position:relative;
+  top:-964px;
+  left:75.2%;
+  background-color:white;
+  & *{
+    margin:5px 5px 5px 27px;
+  }
+  & span{
+    font-size:17px;
+    font-weight:100;
+  }
+
+  & h1{
+    font-size:36px;
+    margin-top:-2px;
+  }
+  & span:last-child{
+    margin:20px 0 46px 27px;
+    color:@orange;
+  }
+}
+.brands-block{
+  display:flex;
+  justify-content:space-between;
+  height:100px;
+  & div{
+height:72px;
+    width:2px;
+    background-color:@body;
+  }
+}
