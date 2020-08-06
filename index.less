@@ -15,6 +15,11 @@ h2 {
   font-size: 22px;
   margin-bottom: 12px;
 }
+h3{
+  font-size: 27px;
+  font-weight:500;
+  font-family:@font;
+}
 
 h4 {
   color: @green;
@@ -30,12 +35,19 @@ h5 {
   font-family: @font;
   margin: 3px;
 }
-
+h6{
+  color:black;
+  text-transform: uppercase;
+  font-family:@font;
+  font-weight:100;
+  font-size:17px;
+  margin-bottom:8px;
+}
 html {
   width: 100%;
   padding: 0;
   background-color: @body;
-  height: 2000px;
+  height: 3000px;
 
   &:root {
     --swiper-theme-color: #fff;
@@ -142,8 +154,6 @@ body {
   & > div {
     display: flex;
     flex-direction: column;
-    width: 270px;
-    height: 245px;
     align-items: flex-start;
 
     & strong {
@@ -392,6 +402,12 @@ body {
 .categories-block_mobile {
   display: none;
 }
+#close-form{
+  position: relative;
+  top:-160px;
+  left:30px;
+  cursor:pointer;
+}
 
 .categories__hot-hover {
   display: none;
@@ -501,14 +517,6 @@ body {
   }
 }
 
-.toggle-click {
-  if(display=flex) {
-  display: none;
-}
-  if(display=flex) {
-  display: flex;
-}
-}
 
 .categories__cold-hover {
   display: none;
@@ -519,7 +527,9 @@ body {
   }
 
 }
-
+.toggle-click {
+  display: flex;
+}
 .categories-block {
   display: flex;
   justify-content: space-around;
@@ -645,7 +655,7 @@ body {
   }
 
   .categories-block_mobile {
-    top: -100px;
+    top: -50px;
     position: relative;
   }
 
@@ -666,15 +676,18 @@ body {
     position: relative;
     z-index: -10;
     top: -100px;
+    display:none;
   }
 
   .search-block {
     justify-content: space-around;
     position: relative;
-    top: -105px;
+    top: -50px;
     z-index: 10;
+    padding-right: 0;
     padding-left: 60px;
     background-color: #f1f1f1;
+    border-bottom:1px solid #e5e5e5;
 
     &_mobile, &__img_mobile {
       display: initial;

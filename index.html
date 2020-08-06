@@ -69,6 +69,7 @@
                     <button>Отправить</button>
                 </form>
             </div>
+            <div id="close-form">X</div>
         </div>
     </nav>
 </header>
@@ -131,7 +132,7 @@
 <div class="categories-block_mobile">
     <span>Оборудование</span><span>→</span>
 </div>
-<div class="categories__hot-hover toggle-click">
+<div class="categories__hot-hover" id="hot">
     <div>
         <a> <span>Парконвенкоматы</span><span>&#62;</span></a>
         <a><span>Конвекционные печи</span><span>&#62;</span></a>
@@ -175,7 +176,7 @@
     </div>
 </div>
 
-<div class="categories__hot-hover categories__cold-hover">
+<div class="categories__hot-hover categories__cold-hover" id="cold">
     <div>
         <a> <span>Холодильные шкафы</span><span>&#62;</span></a>
         <a><span>Камеры холодильные</span><span>&#62;</span></a>
@@ -314,18 +315,228 @@
 <script src="swiper.js"></script>
 <div class="body">
     <div class="brands-block">
-        <img src="images/logo25.png" alt="Abat"/>
-        <div></div>
-        <img src="images/logo24.png" alt="atesy"/>
-        <div></div>
-        <img src="images/logo23.png" alt="hicold"/>
-        <div></div>
-        <img src="images/logo22.png" alt="rational"/>
-        <div></div>
-        <img src="images/logo21.png" alt="simeco"/>
-        <div></div>
-        <span>Все бренды</span>
+        <div>
+            <img src="images/logo25.png" alt="Abat"/>
+            <div></div>
+            <img src="images/logo24.png" alt="atesy"/>
+            <div></div>
+        </div>
+        <div>
+            <img src="images/logo23.png" alt="hicold"/>
+            <div></div>
+            <img src="images/logo22.png" alt="rational"/>
+            <div></div>
+        </div>
+        <div>
+            <img src="images/logo21.png" alt="simeco"/>
+            <div></div>
+            <span>Все бренды</span>
+        </div>
+    </div>
+    <div class="news-block">
+        <div>
+            <h3>Новости производителей</h3>
+            <img src="images/lastnews.png" alt="пекарский шкаф"/>
+            <div class="news-block__producer-line">
+                <span>Abat</span>
+                <span>22.06.17</span>
+            </div>
+            <strong>Новый разборный ротационный пекарский
+                шкаф РПШ-18-8-6МР
+            </strong>
+            <span>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР:  в комплекте тележка-шпилька ТШГ-18 на 18
+                уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных форм №7инжекционный тип
+                парообразованияразборная конструкция увеличенное стекло двери.Память на 110 программ (до 4-ех этапов
+                в каждой программе)USB-порт. Таймер до 10 ч </span>
+            <button>Все новости</button>
+        </div>
+        <div>
+            <div>
+                <img src="images/news1.png" alt="посудомоечная машина"/>
+                <div>
+                    <div class="news-block__producer-line">
+                        <span>Abat</span>
+                        <span>22.06.17</span>
+                    </div>
+                    <strong>Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки
+                        Abat</strong>
+                    <span>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности
+                        изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин
+                        ЬПТ торговорй марки Abat всех моделей ...</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/news1.png" alt="посудомоечная машина"/>
+                <div>
+                    <div class="news-block__producer-line">
+                        <span>Abat</span>
+                        <span>22.06.17</span>
+                    </div>
+                    <strong>Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки
+                        Abat</strong>
+                    <span>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с
+                        1 июня 2017 года был изменен алгоритм работы работы туннельных посудомоечных машин
+                        ЬПТ торговорй марки Abat всех моделей ...</span>
+                </div>
+            </div>
+            <div>
+                <img src="images/news1.png" alt="посудомоечная машина"/>
+                <div>
+                    <div class="news-block__producer-line">
+                        <span>Abat</span>
+                        <span>22.06.17</span>
+                    </div>
+                    <strong>Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки
+                        Abat</strong>
+                    <span>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с
+                        1 июня 2017 года был изменен алгоритм работы работы туннельных посудомоечных машин
+                        ЬПТ торговорй марки Abat всех моделей ... </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recommend-block">
+        <h3>Рекомендуем</h3>
+        <span>В этих разделах вы можете получить подробную информацию о пищевом оборудовании для столовых,
+                ресторанов и кафе ведущих производителей.</span>
+        <div>
+            <div>
+
+                <h6>RATIONAL</h6>
+                <strong>Парконвенкоматы</strong>
+                <span>Педантичность и преданность своему делу делает продукцию Rational
+                    идеальной для тех, кто ищет надежность и долговечность</span>
+
+                <img src="images/rational.png" alt="rational"/>
+            </div>
+            <div>
+                <div>
+                    <img src="images/abat.png" alt="rational"/>
+                    <div>
+                        <h6>ABAT</h6>
+                        <strong>Тепловое оборудование</strong>
+                        <span>Более 55 лет успешно работает на рынке торгово-тезнологического оборудования,
+                        по праву занимая лидирующее положение в данном сегменте.</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h6>hicold</h6>
+                        <strong>Холодильные столы</strong>
+                        <span>Многофкнкционгальность оборудования позволяет оптимищировать пространство на кухне,
+                            сделать работу персонала максимально удобной и эффективной</span>
+                    </div>
+                    <img src="images/hicold.png" alt="rational"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-block">
+        <div>
+            <h3> Комплексные решения оснащения столовых
+                и кафе</h3>
+
+            <span> Компания предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.
+            Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.
+</span>
+
+            <h3> Что мы предлагаем</h3>
+
+            <span> разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;
+            составление меню согласно концепции и оснащения бара (кафе, столовой);
+            подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и ресторана, большой выбор современных моделей; доставку в любой регион РФ;
+            монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое оборудование для бара;
+</span>
+            <button>+</button>
+        </div>
+        <div>
+            <img src="images/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.png" alt="logo"/>
+            <h3> Столовая.РУ</h3>
+            <span>  создание оптимальных пищеблоков</span>
+
+            Группа компаний
+            <span> Показатели:</span>
+
+            На рынке: 5 лет
+            Объем контрактов: 4 млрд.р.
+            Количество контрактов: 620
+        </div>
     </div>
 </div>
+<div class="footer-block">
+    <div>
+        <div>
+            <strong> Информация</strong>
+
+            <span>  Компания</span>
+            <span> Портфолио</span>
+            <span>Проектирование</span>
+            <span>Ресторанам</span>
+            <span> Застройщикам</span>
+            <span> Гос.заказчикам</span>
+            <span>  Таблет-питание</span>
+            <span>Сервис</span>
+            <span>Новости</span>
+            <span>  Контакты</span>
+
+
+        </div>
+        <div>
+            <strong> Оборудование</strong>
+
+            <span>    Тепловое</span>
+            <span>   Холодильное</span>
+            <span>Электромеханическое</span>
+            <span>Посудомоечное</span>
+            <span> Барное</span>
+            <span>Хлебопекарное</span>
+            <span>   Линии раздачи</span>
+            <span>Нейтральное</span>
+            <span>Для фаст фуда</span>
+            <span>  Для залов</span>
+            <span>   Весовое</span>
+
+        </div>
+        <div>
+            <strong> Предложения</strong>
+
+            <span>Кафе, барам, ресторанам</span>
+            <span> Дестким садам и школам</span>
+            <span> Таблет-питание</span>
+            <span> Для кондитерских</span>
+            <span> Для пиццерий</span>
+            <span> Для магазинов</span>
+            <span> Для воинских частей</span>
+            <span> Все предложения</span>
+        </div>
+        <div>
+            <strong> Контакты</strong>
+
+            <span> 8 495 150-31-71</span>
+            <span>8 800 500 43 44</span>
+            <span> звонок беспланый</span>
+
+            <span>  Пн-Пт</span>
+            <span> 09:00 до 18:00</span>
+
+            <span> com@stolovay.ru</span>
+            <span> info@stolovay.ru</span>
+            <span>
+                111524, Москва,</span>
+            <span> Рязанский проспект 24к2</span>
+
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/logo.png" alt="logo"/>
+                <div>
+                    <strong>Столовая.РУ</strong>
+                    <span>Создание пищеблоков</span>
+                </div>
+            </div>
+            <div>Сайт разработан NTI-systems</div>
+        </div>
+    </div>
 </body>
 </html>
