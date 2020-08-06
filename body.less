@@ -23,6 +23,15 @@
   font-weight: 100;
   border-bottom: 13px solid #f4f2f2;
 
+  & div {
+    background-color: #f4f2f2;
+    width: 100%;
+    height: 14px;
+    position: relative;
+    z-index: 100;
+    top: 17px;
+  }
+
   & a {
     padding: 6px 0 0 0;
     margin: 8px 25px;
@@ -285,7 +294,7 @@
 
 .about-block {
   display: flex;
-  padding: 170px 30px 0 30px;
+  padding: 170px 0 0 30px;
   justify-content: space-around;
   width: 100%;
   font-family: @font;
@@ -432,7 +441,10 @@
   }
 
   .sale-block {
-    display: none;
+    top: 10px;
+    left: 4px;
+    width: 900px;
+    margin: 0 auto;
   }
 
   .swiper-container {
@@ -449,6 +461,10 @@
 
   .body {
     width: auto;
+  }
+
+  .brands-block {
+    width: 905px;
   }
 }
 
@@ -483,6 +499,10 @@
     top: 8px;
   }
 
+  .sale-block{
+    width:750px;
+  }
+
   .brands-block {
     height: auto;
     display: flex;
@@ -507,9 +527,12 @@
     height: 400px;
     top: -50px;
   }
-
+  .sale-block{
+    top: -45px;
+    width:100%;
+  }
   .body {
-    top: -60px;
+    top: -30px;
   }
 
   .news-block {
@@ -542,11 +565,11 @@
       }
 
       & strong {
-        color:white;
-font-weight:normal;
+        color: white;
+        font-weight: normal;
         font-family: @font;
         border-bottom: 1px solid @gray-text;
-        padding:10px 20px;
+        padding: 10px 20px;
       }
     }
 
