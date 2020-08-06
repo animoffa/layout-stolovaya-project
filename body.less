@@ -129,21 +129,22 @@
 
 .news-block {
   display: flex;
-  padding: 170px 0 0 0;
+  padding: 130px 0 0 0;
   justify-content: space-between;
   align-items: center;
 
   & button {
     font-size: 17px;
     padding: 5px 30px;
-    margin-top: 40px;
+    margin-top: 60px;
     border-radius: 30px;
   }
 
   & strong {
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 500;
     padding: 10px 0;
+
   }
 
   & > div {
@@ -162,8 +163,10 @@
     font-family: @font;
   }
 
-  & > div > span, & > div > strong {
+  & > div > span {
     display: block;
+    font-size:17px;
+    margin-top:10px;
   }
 
   & > div:last-child {
@@ -197,7 +200,7 @@
 
 .recommend-block {
   display: flex;
-  padding: 170px 0 0 0;
+  padding: 140px 0 0 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -221,7 +224,7 @@
 
   & > div {
     display: flex;
-    margin-top: 40px;
+    margin-top: 25px;
 
   }
 
@@ -294,7 +297,7 @@
 
 .about-block {
   display: flex;
-  padding: 170px 0 0 30px;
+  padding: 100px 0 0 0;
   justify-content: space-around;
   width: 100%;
   font-family: @font;
@@ -310,10 +313,15 @@
     border: none;
     outline: none;
   }
+  h1{
+
+  }
 
   & span {
     margin-bottom: 20px;
     color: @gray-text;
+    font-size:18px;
+    font-weight: 100;
   }
 
   & > div:first-child {
@@ -323,6 +331,7 @@
 
   & > div:last-child {
     width: 255px;
+    padding-top:110px;
 
     & * {
       display: block;
@@ -365,13 +374,13 @@
     }
 
     &:last-child {
-      background-color: black;
+      background-color: #191919;
       justify-content: space-between;
-      padding: 40px 100px 30px 100px;
+      padding: 40px 250px 30px 250px;
       align-items: center;
 
       & strong {
-        font-size: 18px;
+        font-size: 23px;
         font-weight: 500;
         font-family: @font;
         color: #fff;
@@ -380,12 +389,13 @@
 
       & span {
         color: #777;
-        font-size: 14px;
+        font-size: 16px;
+        font-family: @font;
       }
 
       & img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
       }
 
       & div:first-child {

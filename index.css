@@ -18,7 +18,7 @@ h2 {
   margin-bottom: 12px;
 }
 h3 {
-  font-size: 27px;
+  font-size: 40px;
   font-weight: 500;
   font-family: "MyriadPro", sans-serif;
 }
@@ -734,18 +734,18 @@ body {
 }
 .news-block {
   display: flex;
-  padding: 170px 0 0 0;
+  padding: 130px 0 0 0;
   justify-content: space-between;
   align-items: center;
 }
 .news-block button {
   font-size: 17px;
   padding: 5px 30px;
-  margin-top: 40px;
+  margin-top: 60px;
   border-radius: 30px;
 }
 .news-block strong {
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 500;
   padding: 10px 0;
 }
@@ -761,9 +761,10 @@ body {
 .news-block * {
   font-family: "MyriadPro", sans-serif;
 }
-.news-block > div > span,
-.news-block > div > strong {
+.news-block > div > span {
   display: block;
+  font-size: 17px;
+  margin-top: 10px;
 }
 .news-block > div:last-child {
   padding: 0 0 0 50px;
@@ -789,7 +790,7 @@ body {
 }
 .recommend-block {
   display: flex;
-  padding: 170px 0 0 0;
+  padding: 140px 0 0 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -810,7 +811,7 @@ body {
 }
 .recommend-block > div {
   display: flex;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .recommend-block > div > div {
   display: flex;
@@ -866,7 +867,7 @@ body {
 }
 .about-block {
   display: flex;
-  padding: 170px 0 0 30px;
+  padding: 100px 0 0 0;
   justify-content: space-around;
   width: 100%;
   font-family: "MyriadPro", sans-serif;
@@ -885,6 +886,8 @@ body {
 .about-block span {
   margin-bottom: 20px;
   color: #878787;
+  font-size: 18px;
+  font-weight: 100;
 }
 .about-block > div:first-child {
   width: 830px;
@@ -892,6 +895,7 @@ body {
 }
 .about-block > div:last-child {
   width: 255px;
+  padding-top: 110px;
 }
 .about-block > div:last-child * {
   display: block;
@@ -925,13 +929,13 @@ body {
   font-size: 20px;
 }
 .footer-block > div:last-child {
-  background-color: black;
+  background-color: #191919;
   justify-content: space-between;
-  padding: 40px 100px 30px 100px;
+  padding: 40px 250px 30px 250px;
   align-items: center;
 }
 .footer-block > div:last-child strong {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
   font-family: "MyriadPro", sans-serif;
   color: #fff;
@@ -939,11 +943,12 @@ body {
 }
 .footer-block > div:last-child span {
   color: #777;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "MyriadPro", sans-serif;
 }
 .footer-block > div:last-child img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .footer-block > div:last-child div:first-child {
   display: flex;
