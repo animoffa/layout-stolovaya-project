@@ -1,12 +1,27 @@
 @import "vars";
 
-.body {
-  position: relative;
-  top: -950px;
-  width: 1550px;
+.main-container {
+  max-width: 1550px;
+  margin: 20px auto;
+}
+
+.main-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media @1591 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 1131px) {
+    justify-content: center;
+  }
+}
+
+.body {
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -16,9 +31,6 @@
   width: 305px;
   height: 475px;
   background-color: white;
-  left: 180px;
-  top: 15px;
-  position: relative;
   padding-top: 14px;
   font-weight: 100;
   border-bottom: 13px solid #f4f2f2;
@@ -54,16 +66,26 @@
   }
 }
 
-.swiper-slide {
-  background-color: #fff;
-}
-
 .swiper-container {
-  top: -488px;
-  width: 900px;
-  height: 475px;
-  margin: 0;
-  left: 5px;
+  max-width: 900px;
+  height: fit-content;
+  margin: 0 10px 0 10px;
+  background-color: #fff;
+  @media (max-width: 1500px) {
+    order: -1;
+  }
+  @media @925 {
+    width: 700px;
+  }
+  @media (max-width: 700px) {
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    width: 400px;
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 }
 
 .sale-block {
@@ -74,9 +96,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  position: relative;
-  top: -964px;
-  left: 1425px;
   background-color: white;
 
   & * {
@@ -100,10 +119,10 @@
 }
 
 .brands-block {
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   height: 100px;
-  width: 100%;
   background-color: white;
   align-items: center;
 
@@ -129,7 +148,7 @@
 
 .news-block {
   display: flex;
-  padding: 130px 0 0 0;
+  padding: 100px 0 0 0;
   justify-content: space-between;
   align-items: center;
 
@@ -165,8 +184,8 @@
 
   & > div > span {
     display: block;
-    font-size:17px;
-    margin-top:10px;
+    font-size: 17px;
+    margin-top: 10px;
   }
 
   & > div:last-child {
@@ -200,7 +219,7 @@
 
 .recommend-block {
   display: flex;
-  padding: 140px 0 0 0;
+  padding: 130px 0 0 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -217,7 +236,7 @@
   & span {
     color: @gray-text;
     font-size: 15px;
-    width: 470px;
+    max-width: 470px;
     text-align: center;
 
   }
@@ -243,11 +262,11 @@
       & img {
         margin-top: 60px;
         height: 480px;
-        width: 430px;
+        max-width: 430px;
       }
 
       & span {
-        width: 270px;
+        max-width: 270px;
       }
     }
 
@@ -271,7 +290,7 @@
 
         & img {
           height: 400px;
-          width: 200px;
+          max-width: 200px;
           margin-right: 65px;
         }
       }
@@ -297,8 +316,8 @@
 
 .about-block {
   display: flex;
-  padding: 100px 0 0 0;
-  justify-content: space-around;
+  padding: 110px 0 0 0;
+  justify-content: space-between;
   width: 100%;
   font-family: @font;
 
@@ -313,14 +332,11 @@
     border: none;
     outline: none;
   }
-  h1{
-
-  }
 
   & span {
     margin-bottom: 20px;
     color: @gray-text;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 100;
   }
 
@@ -331,7 +347,7 @@
 
   & > div:last-child {
     width: 255px;
-    padding-top:110px;
+    padding-top: 110px;
 
     & * {
       display: block;
@@ -348,9 +364,7 @@
   flex-direction: column;
   width: 100%;
   color: white;
-  position: relative;
-  top: -780px;
-
+padding-top:182px;
 
   & > div {
     display: flex;
@@ -451,26 +465,13 @@
   }
 
   .sale-block {
-    top: 10px;
-    left: 4px;
-    width: 900px;
-    margin: 0 auto;
-  }
-
-  .swiper-container {
-    top: 8px;
-  }
-
-  .body {
-    top: 15px;
+    order: 1;
+    width:900px;
+    margin:5px 0;
   }
 
   .footer-block {
     top: 60px;
-  }
-
-  .body {
-    width: auto;
   }
 
   .brands-block {
@@ -479,8 +480,12 @@
 }
 
 @media @1400 {
-  .news-block div:last-child {
-    display: none;
+  .news-block {
+    justify-content: center;
+
+    & div:last-child {
+      display: none;
+    }
   }
 
   .recommend-block > div {
@@ -503,14 +508,9 @@
 }
 
 @media @925 {
-  .swiper-container {
-    width: 750px;
-    height: 400px;
-    top: 8px;
-  }
 
-  .sale-block{
-    width:750px;
+  .sale-block {
+    width: 700px;
   }
 
   .brands-block {
@@ -532,17 +532,9 @@
 }
 
 @media @767 {
-  .swiper-container {
-    width: 100%;
-    height: 400px;
-    top: -50px;
-  }
-  .sale-block{
+  .sale-block {
     top: -45px;
-    width:100%;
-  }
-  .body {
-    top: -30px;
+    width: 100%;
   }
 
   .news-block {
@@ -607,6 +599,71 @@
 
     & > div:last-child > div:last-child {
       width: 100%;
+    }
+  }
+
+  .brands-block {
+    width: 100%;
+
+    & > div {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .recommend-block > div {
+    flex-direction: column;
+    align-items: center;
+
+    & span {
+      width: auto;
+    }
+
+
+    & > div:last-child > div:first-child {
+      max-width: 400px;
+
+    }
+
+    & > div:last-child > div:last-child {
+      max-width: 400px;
+
+      & > div {
+        padding: 2px;
+      }
+
+      & img {
+        max-width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .recommend-block > div {
+    flex-direction: column;
+    align-items: center;
+
+    & span {
+      width: auto;
+    }
+
+    & > div:first-child img {
+      max-width: 310px;
+    }
+
+    & > div:last-child > div:first-child {
+      & img {
+        max-width:150px;
+      }
+      max-width: 310px;
+    }
+
+    & > div:last-child > div:last-child {
+      max-width: 310px;
+
     }
   }
 }

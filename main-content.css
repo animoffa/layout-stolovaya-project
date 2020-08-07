@@ -1,0 +1,38 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1131px) {
+  .main-content {
+    justify-content: center;
+  }
+}
+.targeted-offers-block {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+}
+@media (max-width: 1500px) {
+  .targeted-offers-block {
+    display: none;
+  }
+}
+.sale-block {
+  border: 3px solid black;
+}
+@media (max-width: 1500px) {
+  .sale-block {
+    order: 0;
+  }
+}
+.swiper-container {
+  width: 900px;
+  margin: 0 10px 0 10px;
+}
+@media (max-width: 1500px) {
+  .swiper-container {
+    order: -1;
+  }
+}
+/*# sourceMappingURL=main-content.css.map */

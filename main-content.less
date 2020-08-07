@@ -1,0 +1,33 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1131px) {
+    justify-content: center;
+  }
+}
+
+.targeted-offers-block {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  @media (max-width: 1500px) {
+    display: none;
+  }
+}
+
+.sale-block {
+  border: 3px solid black;
+  @media (max-width: 1500px) {
+    order: 0;
+  }
+}
+
+.swiper-container {
+  width: 900px;
+  margin: 0 10px 0 10px;
+  @media (max-width: 1500px) {
+    order: -1;
+  }
+}
