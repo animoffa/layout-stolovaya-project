@@ -1,8 +1,8 @@
 const mySwiper = new Swiper('.swiper-container', {
-    autoplay: {
+    /*autoplay: {
         delay: 5500,
         disableOnInteraction: false,
-    },
+    },*/
     loop: true,
     pagination: {
         el: '.swiper-pagination',

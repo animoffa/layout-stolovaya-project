@@ -1,5 +1,9 @@
 @import "./vars";
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: @font;
   font-weight: 500;
@@ -47,7 +51,6 @@ html {
   width: 100%;
   padding: 0;
   background-color: @body;
-  height: 3000px;
   position: relative;
   &:root {
     --swiper-theme-color: #fff;
@@ -546,7 +549,7 @@ body {
   & div {
     display: flex;
     flex-direction: column;
-    margin: 9px;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
   }
@@ -626,6 +629,34 @@ body {
   #phone-hover{
     left:30.5%;
   }
+
+  .header__navigation div span {
+    display: none;
+  }
+
+  .search-block__search input {
+    width: 300px;
+  }
+
+  .header__navigation {
+    width: 98%;
+  }
+}
+
+@media @1280 {
+  .categories-block {
+    & img {
+      width: 40px;
+      height: 40px;
+    }
+
+    & span {
+      font-size: 11px;
+    }
+  }
+}
+
+@media @1000 {
   .categories-block_mobile {
     font-family: @font;
     display: flex;
@@ -641,18 +672,6 @@ body {
 
   .categories-block {
     display: none;
-  }
-
-  .header__navigation div span {
-    display: none;
-  }
-
-  .search-block__search input {
-    width: 300px;
-  }
-
-  .header__navigation {
-    width: 98%;
   }
 }
 
@@ -703,7 +722,7 @@ body {
     display: inline;
     position: relative;
     z-index: 100;
-    top: 5px;
+    top: 20px;
     left: 10px;
 
     & img {
@@ -730,6 +749,7 @@ body {
     padding-left: 70px;
     background-color: #f1f1f1;
     border-bottom:1px solid #e5e5e5;
+    height:90px;
 
     &_mobile, &__img_mobile {
       display: initial;
