@@ -23,6 +23,10 @@ h3{
   font-size: 40px;
   font-weight:500;
   font-family:@font;
+
+  @media @1640{
+    font-size: 37px;
+  }
 }
 
 h4 {
@@ -584,6 +588,36 @@ body {
     left:46%;
   }
 }
+@media @1640{
+  .search-block{
+    height:50px;
+  }
+  .categories-block{
+    height:80px;
+    padding: 0 6%;
+  }
+}
+@media @1460{
+  .header{
+    height:40px;
+
+  }
+  .search-block{
+    height:45px;
+  }
+  .categories-block{
+    height:70px;
+    padding: 0 6%;
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+
+    & span {
+      font-size: 12px;
+    }
+  }
+}
 
 @media @1550 {
   #copy{
@@ -591,9 +625,6 @@ body {
   }
   #phone-hover{
     left:43.5%;
-  }
-  .header__navigation {
-    width: 95%;
   }
 
   .search-block {
@@ -615,10 +646,6 @@ body {
       padding: 0;
 
     }
-  }
-
-  .categories-block {
-    padding: 0 10px;
   }
 }
 
@@ -644,7 +671,14 @@ body {
 }
 
 @media @1280 {
+  .header{
+    height:35px;
+  }
+  .search-block{
+    height:40px;
+  }
   .categories-block {
+    height:65px;
     & img {
       width: 40px;
       height: 40px;
