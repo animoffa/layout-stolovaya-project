@@ -717,6 +717,36 @@ body {
 }
 
 @media @1000 {
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .search-block{
+    &__logo{
+      & img{
+        width:55px;
+        height:55px;
+      }
+      & span{
+        font-size:17px;
+      }
+    }
+    & img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  .search-block__count_orange{
+    font-size:20px;
+  }
+  .search-block__img_mobile{
+    width:55px !important;
+    height:55px !important;
+  }
+  .search-block__logo{
+    padding:0 30% 0 3%;
+    width:auto;
+  }
   .categories-block_mobile {
     font-family: @font;
     display: flex;
@@ -726,54 +756,12 @@ body {
     padding: 4px 5px;
 
     & span {
-      font-size: 19px;
+      font-size: 32px;
     }
   }
 
   .categories-block {
     display: none;
-  }
-}
-
-@media @925 {
-  .header__navigation * {
-    font-size: 13px;
-    font-weight: 100;
-  }
-
-  .header__navigation a {
-
-    & img {
-      display: initial;
-      width: 20px;
-      height: 20px;
-      opacity: 0.9;
-    }
-
-    & span {
-      display: none;
-    }
-  }
-
-  .search-block__search input {
-    width: 200px;
-  }
-}
-
-@media (max-width: 800px) {
-  .header__navigation > * {
-    padding: 15px 4px;
-  }
-
-  .header__navigation > div {
-    padding: 0;
-  }
-}
-
-@media @1000 {
-  h1 {
-    font-size: 17px;
-    font-weight: bold;
   }
 
   .categories-block_mobile {
@@ -785,12 +773,12 @@ body {
     display: inline;
     position: relative;
     z-index: 100;
-    top: 20px;
-    left: 10px;
+    top: 6px;
+    left: 3%;
 
     & img {
-      width: 50px;
-      height: 50px;
+      width: 75px;
+      height: 75px;
     }
   }
 
@@ -808,10 +796,10 @@ body {
   .search-block {
     justify-content: space-between;
     position: relative;
-    top: -50px;
+    top: -80px;
     z-index: 10;
     padding-right: 0;
-    padding-left: 70px;
+    padding-left: 100px;
     background-color: #f1f1f1;
     border-bottom: 1px solid #e5e5e5;
     height: 90px;
@@ -844,8 +832,15 @@ body {
     }
   }
 }
-
+@media (max-width: 500px) {
+  .search-block__logo{
+    padding-right: 0;
+  }
+}
 @media (max-width: 340px) {
+  h1 {
+    font-size: 17px;
+  }
   .search-block__logo img {
     display: none;
   }
