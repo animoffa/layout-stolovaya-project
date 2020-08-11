@@ -19,12 +19,13 @@ h2 {
   font-size: 22px;
   margin-bottom: 12px;
 }
-h3{
-  font-size: 40px;
-  font-weight:500;
-  font-family:@font;
 
-  @media @1640{
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: @font;
+
+  @media @1640 {
     font-size: 37px;
   }
 }
@@ -43,19 +44,22 @@ h5 {
   font-family: @font;
   margin: 3px;
 }
-h6{
-  color:black;
+
+h6 {
+  color: black;
   text-transform: uppercase;
-  font-family:@font;
-  font-weight:100;
-  font-size:17px;
-  margin-bottom:8px;
+  font-family: @font;
+  font-weight: 100;
+  font-size: 17px;
+  margin-bottom: 8px;
 }
+
 html {
   width: 100%;
   padding: 0;
   background-color: @body;
   position: relative;
+
   &:root {
     --swiper-theme-color: #fff;
   }
@@ -377,6 +381,7 @@ body {
       height: 35px;
       border: 0;
       margin: 0 1px;
+
       &:focus {
         outline: none;
         border: none;
@@ -410,11 +415,12 @@ body {
 .categories-block_mobile {
   display: none;
 }
-#close-form{
+
+#close-form {
   position: relative;
-  top:-160px;
-  left:30px;
-  cursor:pointer;
+  top: -160px;
+  left: 30px;
+  cursor: pointer;
 }
 
 .categories__hot-hover {
@@ -535,9 +541,11 @@ body {
   }
 
 }
+
 .toggle-click {
   display: flex;
 }
+
 .categories-block {
   display: flex;
   justify-content: space-around;
@@ -564,50 +572,61 @@ body {
   }
 }
 
-@media @1900{
-  #copy{
-    left:73.5%;
+@media @1900 {
+  #copy {
+    left: 73.5%;
   }
-  #phone-hover{
-    left:48%;
-  }
-}
-@media @1800{
-  #copy{
-    left:72.5%;
-  }
-  #phone-hover{
-    left:47%;
+
+  #phone-hover {
+    left: 48%;
   }
 }
-@media @1700{
-  #copy{
-    left:71.5%;
+
+@media @1800 {
+  #copy {
+    left: 72.5%;
   }
-  #phone-hover{
-    left:46%;
+
+  #phone-hover {
+    left: 47%;
   }
 }
-@media @1640{
-  .search-block{
-    height:50px;
+
+@media @1700 {
+  #copy {
+    left: 71.5%;
   }
-  .categories-block{
-    height:80px;
+
+  #phone-hover {
+    left: 46%;
+  }
+}
+
+@media @1640 {
+  .search-block {
+    height: 50px;
+  }
+
+  .categories-block {
+    height: 80px;
     padding: 0 6%;
   }
 }
-@media @1460{
-  .header{
-    height:40px;
+
+@media @1460 {
+  .header {
+    height: 40px;
 
   }
-  .search-block{
-    height:45px;
+
+  .search-block {
+    height: 45px;
   }
-  .categories-block{
-    height:70px;
+
+  .categories-block {
+    height: 70px;
     padding: 0 6%;
+
     & img {
       width: 50px;
       height: 50px;
@@ -620,11 +639,12 @@ body {
 }
 
 @media @1550 {
-  #copy{
-    left:76.5%;
+  #copy {
+    left: 76.5%;
   }
-  #phone-hover{
-    left:43.5%;
+
+  #phone-hover {
+    left: 43.5%;
   }
 
   .search-block {
@@ -650,13 +670,16 @@ body {
 }
 
 @media @1310 {
-  #copy{
-    left:74.5%;
-  }
-  #phone-hover{
-    left:30.5%;
+  #copy {
+    left: 74.5%;
   }
 
+  #phone-hover {
+    left: 30.5%;
+  }
+}
+
+@media @1280 {
   .header__navigation div span {
     display: none;
   }
@@ -665,20 +688,23 @@ body {
     width: 300px;
   }
 
-  .header__navigation {
-    width: 98%;
-  }
-}
+  .header {
+    height: 35px;
+    padding: 0 6%;
 
-@media @1280 {
-  .header{
-    height:35px;
+    &__navigation {
+      width: auto;
+    }
+
   }
-  .search-block{
-    height:40px;
+
+  .search-block {
+    height: 40px;
   }
+
   .categories-block {
-    height:65px;
+    height: 65px;
+
     & img {
       width: 40px;
       height: 40px;
@@ -733,15 +759,18 @@ body {
     width: 200px;
   }
 }
-@media (max-width:800px) {
-  .header__navigation > *{
-    padding:15px 4px;
+
+@media (max-width: 800px) {
+  .header__navigation > * {
+    padding: 15px 4px;
   }
-  .header__navigation > div{
-    padding:0;
+
+  .header__navigation > div {
+    padding: 0;
   }
 }
-@media @767 {
+
+@media @1000 {
   h1 {
     font-size: 17px;
     font-weight: bold;
@@ -764,26 +793,28 @@ body {
       height: 50px;
     }
   }
-.search-block__basket{
-  padding:0;
-}
+
+  .search-block__basket {
+    padding: 0;
+  }
+
   .header {
     position: relative;
     z-index: -10;
     top: -100px;
-    display:none;
+    display: none;
   }
 
   .search-block {
-    justify-content:space-between;
+    justify-content: space-between;
     position: relative;
     top: -50px;
     z-index: 10;
     padding-right: 0;
     padding-left: 70px;
     background-color: #f1f1f1;
-    border-bottom:1px solid #e5e5e5;
-    height:90px;
+    border-bottom: 1px solid #e5e5e5;
+    height: 90px;
 
     &_mobile, &__img_mobile {
       display: initial;
@@ -815,7 +846,7 @@ body {
 }
 
 @media (max-width: 340px) {
-  .search-block__logo img{
+  .search-block__logo img {
     display: none;
   }
 

@@ -7,13 +7,7 @@
 
 .main-content {
   display: flex;
-
   height: 480px;
-
-  @media @1000 {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .body {
@@ -33,12 +27,6 @@
 
   @media @1280 {
     font-size: 13px;
-  }
-
-  @media @1000 {
-    width: 100%;
-    order: 1;
-    margin: 20px 0;
   }
 
   & h2 {
@@ -81,9 +69,6 @@
   margin-left: 25px !important;
   margin-right: 25px !important;
   background-color: #fff;
-  @media @1000 {
-    width: 100%;
-  }
 }
 
 .swiper-slide {
@@ -162,11 +147,11 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-  color: rgba(255, 255, 255, 0.32) !important;
+  color: rgba(255, 255, 255, 0) !important;
 }
 
 .swiper-button-prev:hover, .swiper-button-next:hover {
-  color: rgb(255, 255, 255) !important;
+  color: rgba(255, 255, 255, 0.47) !important;
 }
 
 .sale-block {
@@ -242,38 +227,37 @@
 
 .news-block {
   display: flex;
-  padding: 50px 0 0 0;
+  padding: 100px 0 0 0;
   justify-content: space-between;
   align-items: center;
 
   & button {
     font-size: 17px;
     padding: 5px 30px;
-    margin-top: 60px;
+    margin-top: 55px;
     border-radius: 30px;
-    width: 200px;
+    width: 170px;
   }
 
   & strong {
     font-size: 24px;
-    font-weight: 600;
-    padding: 10px 0;
+    font-weight: 500;
 
   }
 
   & > div:first-child {
-    width: 90%;
+    width: 40%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     & h3 {
-      text-align: center;
+      text-align: left;
     }
 
     & img {
-      margin: 0 auto;
+      margin: 7px 0 28px 0;
     }
   }
 
@@ -283,12 +267,12 @@
 
   & > div > span {
     display: block;
-    font-size: 17px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 17px;
   }
 
   & > div:last-child {
-    padding: 0 0 0 70px;
+    padding: 0 0 0 105px;
 
     & > div {
       display: flex;
@@ -302,7 +286,7 @@
   }
 
   & img {
-    margin: 0 10px 0 10px;
+    margin: 0 20px 0 0;
   }
 
   &__producer-line {
@@ -318,12 +302,17 @@
 
 .recommend-block {
   display: flex;
-  padding: 130px 0 0 0;
+  padding: 120px 0 0 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   font-family: @font;
+
+
+  & h3 {
+    margin-bottom: 10px;
+  }
 
   & strong {
     font-size: 22px;
@@ -334,22 +323,23 @@
 
   & span {
     color: @gray-text;
-    font-size: 15px;
-    max-width: 470px;
+    font-size: 17px;
+    max-width: 670px;
     text-align: center;
 
   }
 
   & > div {
     display: flex;
-    margin-top: 25px;
+    margin-top: 65px;
+    width: 100%;
 
   }
 
   & > div > div {
     display: flex;
     flex-direction: column;
-    margin: 2.5px;
+    margin: 0 5px;
 
     &:first-child {
       justify-content: flex-end;
@@ -421,7 +411,7 @@
 
 .about-block {
   display: flex;
-  padding: 110px 0 0 0;
+  padding: 120px 0 0 0;
   justify-content: space-between;
   width: 100%;
   font-family: @font;
@@ -895,10 +885,11 @@
     margin: 30px 0 25px 0;
   }
 
-  .swiper-container{
+  .swiper-container {
     margin-left: 15px !important;
     margin-right: 15px !important;
   }
+
   .swiper-slide {
     font-size: 10px;
 
@@ -966,9 +957,10 @@
   }
 
   .brands-block {
-    height:50px;
-    & img{
-      width:80px;
+    height: 50px;
+
+    & img {
+      width: 80px;
     }
   }
 
@@ -976,8 +968,8 @@
     width: 74%;
     padding-top: 35px;
 
-    & strong{
-      padding:5px 0;
+    & strong {
+      padding: 5px 0;
     }
 
     & > div:first-child {
@@ -997,12 +989,13 @@
         width: 100px;
         font-size: 10px;
         margin-top: 15px;
-        padding:3px 8px;
+        padding: 3px 8px;
       }
     }
 
     & > div:last-child {
-      padding:0 0 0 50px;
+      padding: 0 0 0 50px;
+
       & img {
         width: 100px;
         height: 85px;
@@ -1021,9 +1014,10 @@
         margin-top: 0;
       }
     }
-    &__producer-line{
-      margin-bottom:0;
-      font-size:9px;
+
+    &__producer-line {
+      margin-bottom: 0;
+      font-size: 9px;
     }
   }
 
@@ -1129,8 +1123,9 @@
     & span {
       font-size: 10px;
     }
-    & > div:first-child{
-      padding:50px 0 0 50px;
+
+    & > div:first-child {
+      padding: 50px 0 0 50px;
     }
 
     & > div strong {
@@ -1139,10 +1134,43 @@
   }
 }
 
-@media @767 {
+@media @1000 {
+  .main-container{
+    margin:0;
+    position: relative;
+    top: -45px;
+  }
+  .body{
+    position: relative;
+    top: -45px;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .swiper-container {
+    width: 100%;
+    max-width: 1000px;
+  }
+
   .recommend-block > div {
     flex-direction: column;
     align-items: center;
+
+    & > div:first-child {
+      height: auto;
+      justify-content: center;
+      max-width: 790px;
+
+      & img {
+        margin-top: 0;
+        height: 250px;
+        width: 80%;
+      }
+    }
 
     & > div:last-child > div:last-child {
       width: 100%;
@@ -1166,18 +1194,21 @@
 
   .recommend-block {
     padding-top: 60px;
+    width:90%;
   }
 
   .about-block {
     padding-top: 60px;
     flex-direction: column-reverse;
+    width:90%;
 
     & > div {
-      padding: 0 0 0 5%;
-
       &:first-child {
-        width: 90%;
-        padding: 0 0 0 5%;
+        width: 100%;
+        padding:0;
+      }
+      &:last-child{
+        padding-bottom:20px;
       }
     }
   }
@@ -1185,6 +1216,7 @@
   .footer-block {
     & > div:first-child {
       flex-direction: column;
+      padding:5%;
 
       & span {
         display: none;
@@ -1208,9 +1240,11 @@
   .recommend-block > div {
     flex-direction: column;
     align-items: center;
-
+& > div{
+  margin:0;
+}
     & > div:first-child {
-      width: 90%;
+      width: 100%;
     }
 
     & > div:last-child > div:first-child {
@@ -1231,6 +1265,15 @@
     width: 90%;
     height: auto;
     margin-top: 20px;
+    flex-direction: column;
+
+    &__mobile-invisible {
+      display: none;
+    }
+
+    & span {
+      padding-right: 0;
+    }
 
     & > div {
       width: 100%;
