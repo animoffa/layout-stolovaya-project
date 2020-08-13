@@ -15,7 +15,11 @@ $(document).ready(() => {
     $('.categories-block div:nth-child(2)').click(function () {
         $('#cold').toggleClass("toggle-click");
     })
-$('#close-form').click(function () {
-    $('#phone-hover').css({"display": "none"})
-})
+    $('#close-form').click(function () {
+        $('#phone-hover').css({"display": "none"})
+    })
+    $('.header_mobile img').click(function () {
+        $('#header').toggleClass('active');
+        $('#nav').toggleClass('active_nav');
+    })
 })
