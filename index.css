@@ -1883,6 +1883,7 @@ body {
     justify-content: center;
     max-width: 790px;
     width: 100%;
+    padding-top: 60px;
   }
   .recommend-block > div > div:first-child span {
     max-width: 80%;
@@ -1896,11 +1897,15 @@ body {
     width: 40%;
   }
   .recommend-block > div > div:last-child > div:first-child div {
+    text-align: left;
     width: auto;
     padding-bottom: 10px;
   }
   .recommend-block > div > div:last-child > div:last-child img {
     width: 200px;
+  }
+  .recommend-block > div > div:last-child > div:last-child div {
+    text-align: left;
   }
   #subtitle {
     font-size: 26px;
