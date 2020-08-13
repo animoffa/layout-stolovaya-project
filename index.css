@@ -245,6 +245,7 @@ body {
 .search-block__basket {
   display: flex;
   text-align: center;
+  white-space: nowrap;
 }
 .search-block__basket div {
   display: flex;
