@@ -4,55 +4,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: @font;
-  font-weight: 500;
-  margin: 0 5px;
-  font-size: 33px;
-}
-
-h2 {
-  font-family: @font;
-  color: @orange;
-  font-weight: normal;
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-
-h3 {
-  font-size: 40px;
-  font-weight: 500;
-  font-family: @font;
-
-  @media @1640 {
-    font-size: 37px;
-  }
-}
-
-h4 {
-  color: @green;
-  font-size: 22px;
-  font-weight: 100;
-  margin-top: 0;
-}
-
-h5 {
-  color: @gray-text;
-  font-size: 18px;
-  font-weight: 100;
-  font-family: @font;
-  margin: 3px;
-}
-
-h6 {
-  color: black;
-  text-transform: uppercase;
-  font-family: @font;
-  font-weight: 100;
-  font-size: 17px;
-  margin-bottom: 8px;
-}
 
 html {
   width: 100%;
@@ -105,6 +56,11 @@ body {
 
     > div {
       align-items: center;
+      display: flex;
+
+      & > * {
+        margin: 0 2px;
+      }
     }
   }
 
@@ -116,6 +72,10 @@ body {
   }
 }
 
+#email, #phone {
+  height: 100%;
+}
+
 #email:hover {
   background-color: @hover-green;
 }
@@ -123,10 +83,10 @@ body {
 #copy {
   background-color: black;
   width: 145px;
-  height: 9px;
+  height: 30px;
   position: absolute;
   top: 55px;
-  left: 1400px;
+  right: 17.8%;
   font-size: 16px;
   border-radius: 40px;
   display: none;
@@ -146,7 +106,17 @@ body {
 #phone:hover {
   background-color: @hover-green;
 }
-
+#darken, .darken{
+position: absolute;
+  display: none;
+  width:100%;
+  height:100%;
+  z-index:100;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.darken{
+  display:initial;
+}
 
 #phone-hover {
   background-color: white;
@@ -154,13 +124,12 @@ body {
   height: 339px;
   position: absolute;
   top: 55px;
-  left: 49.4%;
+  right: 9%;
   display: none;
   justify-content: space-around;
   z-index: 200;
   color: black;
   font-size: 17px;
-
 
   & > div {
     display: flex;
@@ -202,10 +171,6 @@ body {
     }
 
     & > div {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-
       & div span:hover {
         border-bottom: 1px solid black;
       }
@@ -214,8 +179,24 @@ body {
     & * {
       margin: 2px;
     }
-  }
 
+  }
+}
+
+.phone-hover__social > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &:first-child img {
+    margin-right: 6px !important;
+  }
+}
+
+#title {
+  font-family: @font;
+  font-weight: 500;
+  margin: 0 5px;
+  font-size: 33px;
 }
 
 .search-block {
@@ -229,7 +210,6 @@ body {
   &_mobile, &__img_mobile, &__img_hover {
     display: none;
   }
-
 
   &__count_orange {
     color: @orange;
@@ -294,19 +274,20 @@ body {
       justify-content: center;
     }
 
-    & div:last-child {
+    &-text {
       margin-left: 14px;
       text-align: left;
-    }
 
-    & div:last-child span:first-child {
-      color: @gray-text;
-      font-size: 15px;
-      font-family: @font;
-    }
 
-    & div:last-child span:last-child {
-      font-weight: bold;
+      & span:first-child {
+        color: @gray-text;
+        font-size: 15px;
+        font-family: @font;
+      }
+
+      & span:last-child {
+        font-weight: bold;
+      }
     }
 
     & img {
@@ -398,12 +379,12 @@ body {
       border-bottom-right-radius: 4px;
       width: 50px;
       margin: 0;
-    }
 
-    & a:last-child button img {
-      width: 23px;
-      height: 23px;
-      padding-top: 2px;
+      & img {
+        width: 23px;
+        height: 23px;
+        padding-top: 2px;
+      }
     }
 
     & a:first-child button {
@@ -421,9 +402,23 @@ body {
 
 #close-form {
   position: relative;
-  top: -160px;
+  top: -150px;
   left: 30px;
   cursor: pointer;
+}
+
+.hover-second {
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 25px 30px;
+    border-top: 1px solid @gray;
+  }
+
+  & > div:first-child {
+    border-top: none;
+  }
 }
 
 .categories__hot-hover {
@@ -433,24 +428,12 @@ body {
   position: absolute;
   top: 213px;
   left: 0;
-  z-index: 10;
+  z-index: 150;
 
   & > div {
     box-shadow: 0 4px 3px rgba(0, 0, 0, 0.11) inset;
     background-color: #f7f7f7;
     width: 290px;
-
-    & > div {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      padding: 25px 30px;
-      border-top: 1px solid @gray;
-    }
-
-    & > div:first-child {
-      border-top: none;
-    }
 
     & span {
       margin: 2px;
@@ -509,6 +492,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 65px;
+    width: auto;
     justify-content: center;
     align-items: center;
 
@@ -529,8 +513,17 @@ body {
       margin: 20px;
       outline: none;
       border: none;
-      font-size: 15px;
+      font-size: 17px;
+      font-weight: 100;
     }
+  }
+
+  &__title {
+    font-weight: 100;
+    font-size: 15px;
+    color: @gray-text;
+    font-family: @font;
+    margin: 10px 0;
   }
 }
 
@@ -575,35 +568,6 @@ body {
   }
 }
 
-@media @1900 {
-  #copy {
-    left: 73.5%;
-  }
-
-  #phone-hover {
-    left: 48%;
-  }
-}
-
-@media @1800 {
-  #copy {
-    left: 72.5%;
-  }
-
-  #phone-hover {
-    left: 47%;
-  }
-}
-
-@media @1700 {
-  #copy {
-    left: 71.5%;
-  }
-
-  #phone-hover {
-    left: 46%;
-  }
-}
 
 @media @1640 {
   .search-block {
@@ -614,6 +578,13 @@ body {
     height: 80px;
   }
 
+  #title {
+    font-family: @font;
+    font-weight: 500;
+    margin: 0 5px;
+    font-size: 30px;
+  }
+
   .search-block {
     & img {
       width: 30px;
@@ -621,9 +592,7 @@ body {
     }
 
     &__logo {
-      & h1 {
-        font-size: 30px;
-      }
+
 
       & img {
         width: 35px;
@@ -649,6 +618,10 @@ body {
 }
 
 @media @1460 {
+  #copy {
+    top: 45px;
+  }
+
   .header {
     height: 40px;
 
@@ -671,6 +644,10 @@ body {
     }
   }
 
+  #title {
+    font-size: 27px;
+  }
+
   .search-block {
     & img {
       width: 28px;
@@ -682,9 +659,6 @@ body {
     }
 
     &__logo {
-      & h1 {
-        font-size: 27px;
-      }
 
       & img {
         width: 33px;
@@ -713,29 +687,14 @@ body {
   }
 }
 
-@media @1550 {
-  #copy {
-    left: 76.5%;
-  }
-
-  #phone-hover {
-    left: 43.5%;
-  }
-}
-
-@media @1310 {
-  #copy {
-    left: 74.5%;
-  }
-
-  #phone-hover {
-    left: 30.5%;
-  }
-}
-
 @media @1280 {
-  .header__navigation div span {
+  #email span, #phone span {
     display: none;
+  }
+
+  #copy {
+    top: 38px;
+    right: 8%;
   }
 
   .header {
@@ -760,6 +719,10 @@ body {
     }
   }
 
+  #title {
+    font-size: 25px;
+  }
+
   .search-block {
     & img {
       width: 25px;
@@ -771,9 +734,6 @@ body {
     }
 
     &__logo {
-      & h1 {
-        font-size: 25px;
-      }
 
       & img {
         width: 30px;
@@ -802,8 +762,9 @@ body {
   }
 }
 
+
 @media @1000 {
-  h1 {
+  #title {
     font-size: 30px;
     font-weight: 500;
   }
@@ -900,19 +861,21 @@ body {
     z-index: 5000;
     top: 85px;
     display: flex;
-    position:absolute;
+    position: absolute;
     height: fit-content;
 
     &_nav {
       display: flex;
       flex-direction: column;
+
       > a {
         margin: 10px 0;
-        font-size:17px;
+        font-size: 17px;
       }
-      & span{
-        font-size:17px;
-        margin:10px 5px;
+
+      & span {
+        font-size: 17px;
+        margin: 10px 5px;
       }
     }
   }
@@ -958,6 +921,10 @@ body {
 }
 
 @media (max-width: 730px) {
+  #title {
+    font-size: 23px;
+  }
+
   .search-block__logo {
     padding-right: 0;
   }
@@ -966,12 +933,11 @@ body {
     font-size: 25px;
   }
 
-  h1 {
-    font-size: 23px;
+
+  .active {
+    top: 65px;
   }
-.active{
-  top:65px;
-}
+
   .search-block {
     &__logo {
       & img {
@@ -1016,26 +982,30 @@ body {
 }
 
 @media (max-width: 392px) {
-  h1 {
+  #title {
     font-size: 17px;
   }
 
   .categories-block_mobile span {
     font-size: 19px;
   }
-  .active{
-    top:55px;
+
+  .active {
+    top: 55px;
+
     &_nav {
       > a {
         margin: 7px 0;
-        font-size:14px;
+        font-size: 14px;
       }
-      & span{
-        font-size:14px;
-        margin:7px 5px;
+
+      & span {
+        font-size: 14px;
+        margin: 7px 5px;
       }
     }
   }
+
   .search-block {
     &__logo {
       & img {

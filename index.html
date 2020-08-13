@@ -17,6 +17,7 @@
     <script src="index.js"></script>
 </head>
 <body>
+
 <div class="header_mobile"><img src="images/меню.png" alt="меню"/></div>
 <header class="header" id="header">
     <nav class="header__navigation" id="nav">
@@ -42,7 +43,7 @@
                 <h4>8 495 790-72-05</h4>
                 <span class="phone-hover__gray-text">Мы принимаем звонки без выходных.</span>
                 <span>Выберите способ связи:</span>
-                <div>
+                <div class="phone-hover__social">
                     <div>
                         <img src="images/telephone.png" alt="Телефон"/><span>Мобильный</span>
                     </div>
@@ -76,11 +77,12 @@
         </div>
     </nav>
 </header>
+<div id="darken"></div>
 <div class="search-block">
     <a class="search-block__logo">
         <img src="./images/logo.png" alt="logo"/>
         <div>
-            <h1>Столовая.РУ</h1>
+            <div id="title">Столовая.РУ</div>
             <span>Создание пищеблоков</span>
         </div>
     </a>
@@ -104,7 +106,7 @@
         </a>
         <input type="text"/>
         <a>
-            <button><img src="images/search.png" alt="search"/></button>
+            <button class="search-block__search-button"><img src="images/search.png" alt="search"/></button>
         </a>
     </div>
     <div class="search-block_mobile"><img src="images/поиск.png" alt="Найти">
@@ -119,13 +121,13 @@
         </div>
     </a>
     <a class="search-block__basket">
-        <div>
+        <div class="search-block__basket-img">
             <span class="search-block__count_orange">12</span>
             <img src="images/cart.png" alt="basket" class="search-block__img"/>
             <img src="images/shopping-cart-white.png" alt="basket" class="search-block__img_hover"/>
             <img src="images/cart2.png " alt="basket" class="search-block__img_mobile"/>
         </div>
-        <div>
+        <div class="search-block__basket-text">
             <span>Сумма</span>
             <span>150 000 руб.</span>
         </div>
@@ -135,7 +137,7 @@
     <span>Оборудование</span><span>→</span>
 </div>
 <div class="categories__hot-hover" id="hot">
-    <div>
+    <div class="categories__hot-hover__first-block hover-first">
         <a> <span>Парконвенкоматы</span><span>&#62;</span></a>
         <a><span>Конвекционные печи</span><span>&#62;</span></a>
         <a> <span>Плиты</span><span>&#62;</span></a>
@@ -149,14 +151,14 @@
         <a><span>Столы тепловые</span><span>&#62;</span></a>
         <a><span>Шкафы тепловые</span><span>&#62;</span></a>
     </div>
-    <div>
+    <div class="categories__hot-hover__second-block hover-second">
         <div>
             <span>Бойлерные</span>
             <span>Инжекторные</span>
             <span>Все сразу</span>
         </div>
         <div>
-            <h5>Бренды</h5>
+            <span class="categories__hot-hover__title">Бренды</span>
             <span>Abat</span>
             <span>Unox</span>
             <span>Проммаш</span>
@@ -164,21 +166,21 @@
             <span>Rational</span>
         </div>
         <div>
-            <h5>Страны</h5>
+            <span class="categories__hot-hover__title">Страны</span>
             <div><img src="images/Flag_of_Spain.png" alt="Spain"/><span>Spain</span></div>
             <div><img src="images/Flag_of_Switzerland_(Pantone).png" alt="Switzerland"/><span>Italy</span></div>
             <div><img src="images/Flag_of_Germany.png" alt="Germany"/><span>Germany</span></div>
             <div><img src="images/Flag_of_Turkey.png" alt="Turkey"/><span>Turkey</span></div>
         </div>
     </div>
-    <div>
+    <div class="categories__hot-hover__third-block hover-third">
         <img src="images/похоженапечь.png" alt="Парконвенкоматы"/>
         <span>Парконвенкоматы</span>
         <button>Все сразу</button>
     </div>
 </div>
 <div class="categories__hot-hover categories__cold-hover" id="cold">
-    <div>
+    <div class="categories__cold-hover__first-block hover-first">
         <a> <span>Холодильные шкафы</span><span>&#62;</span></a>
         <a><span>Камеры холодильные</span><span>&#62;</span></a>
         <a> <span>Моноблоки</span><span>&#62;</span></a>
@@ -192,7 +194,7 @@
         <a><span>Шкафы шоковой заморозки</span><span>&#62;</span></a>
         <a><span>Кегераторы</span><span>&#62;</span></a>
     </div>
-    <div>
+    <div class="categories__cold-hover__second-block hover-second">
         <div>
             <span>Среднетемпературные</span>
             <span>Низкотемпературные</span>
@@ -202,16 +204,16 @@
             <span>Все сразу</span>
         </div>
         <div>
-            <h5>Страны</h5>
+            <span class="categories__hot-hover__title">Страны</span>
             <div><img src="images/Flag_of_Spain.png" alt="Spain"/><span>Spain</span></div>
             <div><img src="images/Flag_of_Switzerland_(Pantone).png" alt="Switzerland"/><span>Italy</span></div>
             <div><img src="images/Flag_of_Germany.png" alt="Germany"/><span>Germany</span></div>
             <div><img src="images/Flag_of_Turkey.png" alt="Turkey"/><span>Turkey</span></div>
         </div>
     </div>
-    <div>
+    <div class="categories__cold-hover__second-block hover-second">
         <div>
-            <h5>Бренды</h5>
+            <span class="categories__hot-hover__title">Бренды</span>
             <span>ELECTROLUX</span>
             <span>Gastorag</span>
             <span>Ариада</span>
@@ -225,7 +227,7 @@
             <span>TEFCOLD</span>
         </div>
     </div>
-    <div>
+    <div class="categories__cold-hover__third-block hover-third">
         <img src="images/cold.png" alt="Холодильник"/>
         <span>Холодильное оборудование</span>
         <button>Все сразу</button>
@@ -277,13 +279,13 @@
         <span>Для магазинов</span>
     </div>
 </div>
-
-<div class="main-container">
+<div id="d"></div>
+<div id="main" class="main-container">
     <div class="main-content">
         <div class="targeted-offers-block">
-            <h2>
+            <div class="targeted-offers-block__title">
                 Целевые предложения
-            </h2>
+            </div>
             <a><span>Кафе, барам, ресторанам</span> <span>&#62;</span></a>
             <a><span>Детским садам и школам</span> <span>&#62;</span></a>
             <a><span>Таблет-питание</span> <span>&#62;</span></a>
@@ -299,7 +301,7 @@
                 <div class="swiper-slide">
                     <div>
                         <span>Портфолио</span>
-                        <h1>НИИ скорой помощи им. Н.В. Склифосовского</h1>
+                        <div class="swiper-slide__title">НИИ скорой помощи им. Н.В. Склифосовского</div>
                         <span>Оборудование для пищеблоков</span>
                         <button>Подробнее</button>
                     </div>
@@ -309,7 +311,7 @@
                 <div class="swiper-slide">
                     <div>
                         <span>Портфолио</span>
-                        <h1>НИИ скорой помощи им. Н.В. Склифосовского</h1>
+                        <div class="swiper-slide__title">НИИ скорой помощи им. Н.В. Склифосовского</div>
                         <span>Оборудование для пищеблоков</span>
                         <button>Подробнее</button>
                     </div>
@@ -323,7 +325,7 @@
         <div class="sale-block">
             <img src="images/giftbox.png" alt="gift"/>
             <span>Самые низкие цены</span>
-            <h1>Распродажа</h1>
+            <div id="sale-block__title">Распродажа</div>
             <span>Каталог распродаж &#62;</span>
         </div>
     </div>
@@ -331,28 +333,30 @@
     <div class="brands-block">
         <div>
             <img src="images/logo25.png" alt="Abat"/>
-            <div></div>
+            <div class="brands-block__line"></div>
             <img src="images/logo24.png" alt="atesy"/>
-            <div class="brands-block__mobile-invisible"></div>
+            <div class="brands-block__line brands-block__mobile-invisible "></div>
         </div>
         <div>
             <img src="images/logo23.png" alt="hicold"/>
-            <div></div>
+            <div class="brands-block__line"></div>
             <img src="images/logo22.png" alt="rational"/>
-            <div class="brands-block__mobile-invisible"></div>
+            <div class="brands-block__line brands-block__mobile-invisible"></div>
         </div>
         <div>
             <img src="images/logo21.png" alt="simeco"/>
-            <div></div>
+            <div class="brands-block__line"></div>
             <span>Все бренды</span>
         </div>
     </div>
 </div>
-<div class="body">
+<div id="body" class="body">
     <div class="news-block">
-        <div>
-            <h3>Новости производителей</h3>
+        <div class="news-block__last-news">
+            <div class="news-block__title block-title">Новости производителей</div>
+            <div class="img">
             <img src="images/lastnews.png" alt="пекарский шкаф"/>
+            </div>
             <div class="news-block__producer-line">
                 <span>Abat</span>
                 <span>22.06.17</span>
@@ -366,9 +370,11 @@
                 в каждой программе)USB-порт. Таймер до 10 ч </span>
             <button>Все новости</button>
         </div>
-        <div>
+        <div class="news-block__other-news">
             <div>
+                <div class="img">
                 <img src="images/news1.png" alt="посудомоечная машина"/>
+                </div>
                 <div>
                     <div class="news-block__producer-line">
                         <span>Abat</span>
@@ -382,7 +388,9 @@
                 </div>
             </div>
             <div>
+                <div class="img">
                 <img src="images/newsPic.png" alt="посудомоечная машина"/>
+                </div>
                 <div>
                     <div class="news-block__producer-line">
                         <span>Abat</span>
@@ -396,7 +404,9 @@
                 </div>
             </div>
             <div>
+                <div class="img">
                 <img src="images/news1.png" alt="посудомоечная машина"/>
+                </div>
                 <div>
                     <div class="news-block__producer-line">
                         <span>Abat</span>
@@ -412,32 +422,32 @@
         </div>
     </div>
     <div class="recommend-block">
-        <h3>Рекомендуем</h3>
+        <div class="recommend-block__title block-title">Рекомендуем</div>
         <span>В этих разделах вы можете получить подробную информацию о пищевом оборудовании для столовых,
                 ресторанов и кафе ведущих производителей.</span>
-        <div>
-            <div>
-
-                <h6>RATIONAL</h6>
-                <strong>Парконвенкоматы</strong>
-                <span>Педантичность и преданность своему делу делает продукцию Rational
+        <div class="recommend-block__body">
+            <div class="recommend-block__product recommend-block__first-product">
+                <div class="recommend-block__description">
+                    <div class="recommend-block__producer">RATIONAL</div>
+                    <strong>Парконвенкоматы</strong>
+                    <span>Педантичность и преданность своему делу делает продукцию Rational
                     идеальной для тех, кто ищет надежность и долговечность</span>
-
+                </div>
                 <img src="images/rational.png" alt="rational"/>
             </div>
             <div>
-                <div>
+                <div class="recommend-block__product recommend-block__second-product">
                     <img src="images/abat.png" alt="rational"/>
-                    <div>
-                        <h6>ABAT</h6>
+                    <div class="recommend-block__description">
+                        <div class="recommend-block__producer white">ABAT</div>
                         <strong>Тепловое оборудование</strong>
                         <span>Более 55 лет успешно работает на рынке торгово-тезнологического оборудования,
                         по праву занимая лидирующее положение в данном сегменте.</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h6>hicold</h6>
+                <div class="recommend-block__product recommend-block__third-product">
+                    <div class="recommend-block__description">
+                        <div class="recommend-block__producer">hicold</div>
                         <strong>Холодильные столы</strong>
                         <span>Многофкнкционгальность оборудования позволяет оптимищировать пространство на кухне,
                             сделать работу персонала максимально удобной и эффективной</span>
@@ -448,15 +458,16 @@
         </div>
     </div>
     <div class="about-block">
-        <div >
-            <h3> Комплексные решения оснащения столовых
-                и кафе</h3>
+        <div class="about-block__right-side">
+            <div class="about-block__title block-title"> Комплексные решения оснащения столовых
+                и кафе
+            </div>
 
             <span> Компания "Диалог" предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.
             Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.
             </span>
             <div class="about-block__mobile-invisible">
-                <h3> Что мы предлагаем</h3>
+                <div class="about-block__title block-title"> Что мы предлагаем</div>
 
                 <span> разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;
             составление меню согласно концепции и оснащения бара (кафе, столовой);
@@ -464,16 +475,16 @@
             монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое оборудование для бара;
             </span>
             </div>
-            <button>+</button>
+            <button>✛</button>
         </div>
-        <div>
+        <div class="about-block__left-side">
             <img src="images/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.png" alt="logo"/>
             <div>
-                <h3> Столовая.РУ</h3>
+                <div class="about-block__title block-title title"> Столовая.РУ</div>
                 <span id="subtitle">  создание оптимальных пищеблоков</span>
             </div>
             <div>
-              <strong>  Группа компаний </strong>
+                <strong> Группа компаний </strong>
                 <span> Показатели:</span>
             </div>
             <div>
@@ -485,8 +496,8 @@
     </div>
 </div>
 
-<div class="footer-block">
-    <div>
+<div id="footer" class="footer-block">
+    <div class="footer-block__info">
         <div>
             <strong> Информация</strong>
 
@@ -506,17 +517,17 @@
         <div>
             <strong> Оборудование</strong>
 
-            <span>    Тепловое</span>
-            <span>   Холодильное</span>
+            <span>Тепловое</span>
+            <span>Холодильное</span>
             <span>Электромеханическое</span>
             <span>Посудомоечное</span>
             <span> Барное</span>
             <span>Хлебопекарное</span>
-            <span>   Линии раздачи</span>
+            <span>Линии раздачи</span>
             <span>Нейтральное</span>
             <span>Для фаст фуда</span>
-            <span>  Для залов</span>
-            <span>   Весовое</span>
+            <span>Для залов</span>
+            <span>Весовое</span>
 
         </div>
         <div>
@@ -549,15 +560,15 @@
 
         </div>
     </div>
-    <div>
-        <div>
+    <div class="footer-block__last">
+        <div class="footer-block__logo">
             <img src="images/logo.png" alt="logo"/>
             <div>
                 <strong>Столовая.РУ</strong>
                 <span>Создание оптимальных пищеблоков</span>
             </div>
         </div>
-        <div>Сайт разработан NTI-systems</div>
+        <div class="footer-block__producer">Сайт разработан NTI-systems</div>
     </div>
 </div>
 
