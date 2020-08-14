@@ -26,4 +26,11 @@ $(document).ready(() => {
         $('#header').toggleClass('active');
         $('#nav').toggleClass('active_nav');
     })
+    $('.footer-block__info-section').click(function () {
+        let ind = $(this).index(".footer-block__info-section");
+        console.log(ind);
+        $(`.footer-block__info-section:eq(${ind}) > .footer-block__info-desktop > span`).toggleClass("toggle");
+        $(`.footer-block__info-section:eq(${ind}) .footer-block__info-mobile span:first-child`).toggle();
+        $(`.footer-block__info-section:eq(${ind}) .footer-block__info-mobile span:last-child`).toggle();
+    })
 })

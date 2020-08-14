@@ -244,13 +244,16 @@
       font-size: 37px;
     }
   }
+
   & .img {
     margin: 0 20px 0 0;
-    min-width:190px;
-    & img{
-      width:100%;
+    min-width: 190px;
+
+    & img {
+      width: 100%;
     }
   }
+
   &__last-news {
     width: 40%;
 
@@ -260,9 +263,10 @@
 
     & .img {
       margin: 7px 0 28px 0;
-      width:500px;
-      & img{
-        width:100%;
+      width: 500px;
+
+      & img {
+        width: 100%;
       }
     }
   }
@@ -290,7 +294,6 @@
       }
     }
   }
-
 
 
   &__producer-line {
@@ -514,7 +517,11 @@
       display: block;
       margin: 4px;
       font-family: @font;
-      font-weight:100;
+      font-weight: 100;
+    }
+
+    & > div > div:first-child > div {
+      display: none;
     }
 
     & strong {
@@ -637,10 +644,11 @@
     margin: 0 auto;
 
     & .img {
-     min-width: 160px;
+      min-width: 160px;
       height: 150px;
       margin: 0 10px 0 0;
     }
+
     & > div:first-child {
       & strong {
         font-size: 23px;
@@ -648,7 +656,7 @@
 
       & .img {
         width: 450px;
-        height:auto;
+        height: auto;
       }
     }
 
@@ -1295,7 +1303,7 @@
         justify-content: center;
         max-width: 790px;
         width: 100%;
-        padding-top:60px;
+        padding-top: 60px;
 
         & span {
           max-width: 80%;
@@ -1325,7 +1333,8 @@
         & img {
           width: 200px;
         }
-        & div{
+
+        & div {
           text-align: left;
         }
       }
@@ -1430,23 +1439,49 @@
     display: none;
   }
 
+
+  .footer-block__info-desktop {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
   .footer-block {
     & > div:first-child {
       flex-direction: column;
       padding: 7% 2%;
 
-      & span {
+      & > div > div:first-child > div {
+        display: initial;
+      }
+
+      & > div > div:last-child span {
         display: none;
+      }
+
+      & span {
+        font-size: 20px;
       }
 
       & strong {
         color: white;
         font-family: @font;
-        border-bottom: 1px solid @gray-text;
-        padding: 10px 20px;
         font-size: 31px;
         font-weight: 100;
+        margin: 0;
       }
+
+      & > div > div:first-child {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid @gray-text;
+      }
+    }
+
+    &__info-mobile span:last-child {
+      display: none;
     }
 
     & > div:last-child {
@@ -1477,6 +1512,10 @@
       }
     }
 
+  }
+
+  .toggle {
+    display: initial !important;
   }
 
   .targeted-offers-block {
@@ -1848,10 +1887,13 @@
       padding: 5% 2%;
 
       & strong {
-        padding: 0 20px;
         font-size: 14px;
       }
+      & span {
+        font-size: 13px;
+      }
     }
+
 
     & > div:last-child {
       padding: 5px 20px;

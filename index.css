@@ -122,7 +122,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-#phone-hover > div strong {
+#phone-hover > div:first-child strong {
+  font-size: 23px;
+  color: #34a853;
+  margin: 10px 0;
+}
+#phone-hover > div:last-child strong {
   font-size: 20px;
 }
 #phone-hover > div form {
@@ -1271,6 +1276,9 @@ body {
   font-family: "MyriadPro", sans-serif;
   font-weight: 100;
 }
+.footer-block > div > div > div:first-child > div {
+  display: none;
+}
 .footer-block > div strong {
   font-family: "MyriadPro", sans-serif;
   color: #777;
@@ -1983,20 +1991,39 @@ body {
   .news-block {
     display: none;
   }
+  .footer-block__info-desktop {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer-block > div:first-child {
     flex-direction: column;
     padding: 7% 2%;
   }
-  .footer-block > div:first-child span {
+  .footer-block > div:first-child > div > div:first-child > div {
+    display: initial;
+  }
+  .footer-block > div:first-child > div > div:last-child span {
     display: none;
+  }
+  .footer-block > div:first-child span {
+    font-size: 20px;
   }
   .footer-block > div:first-child strong {
     color: white;
     font-family: "MyriadPro", sans-serif;
-    border-bottom: 1px solid #878787;
-    padding: 10px 20px;
     font-size: 31px;
     font-weight: 100;
+    margin: 0;
+  }
+  .footer-block > div:first-child > div > div:first-child {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #878787;
+  }
+  .footer-block__info-mobile span:last-child {
+    display: none;
   }
   .footer-block > div:last-child {
     display: flex;
@@ -2020,6 +2047,9 @@ body {
     font-weight: 100;
     font-size: 42px;
     font-family: "MyriadPro", sans-serif;
+  }
+  .toggle {
+    display: initial !important;
   }
   .targeted-offers-block {
     display: none;
@@ -2283,8 +2313,10 @@ body {
     padding: 5% 2%;
   }
   .footer-block > div:first-child strong {
-    padding: 0 20px;
     font-size: 14px;
+  }
+  .footer-block > div:first-child span {
+    font-size: 13px;
   }
   .footer-block > div:last-child {
     padding: 5px 20px;
