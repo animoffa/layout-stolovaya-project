@@ -461,6 +461,10 @@ body {
 .categories__cold-hover > div:last-child {
   width: 440px;
   padding: 50px 0;
+  background-color: #faad3d;
+}
+.categories__cold-hover > div:last-child a {
+  background-color: black;
 }
 .toggle-click {
   display: flex;
@@ -1348,6 +1352,9 @@ body {
   }
 }
 @media (max-width:1640px) {
+  .categories__hot-hover {
+    top: 180px;
+  }
   .main-content {
     width: 81%;
     margin: 0 auto;
@@ -2236,6 +2243,9 @@ body {
   .about-block > div:last-child > div:last-child span {
     font-size: 17px;
   }
+  .about-block > div:last-child p {
+    font-size: 20px;
+  }
   .about-block strong {
     margin: 17px 0 0 0;
     font-size: 25px;
@@ -2377,10 +2387,10 @@ body {
   .about-block div:first-child .h3 {
     font-size: 21px;
   }
-  .about-block > div:first-child p {
+  .about-block > div p {
     font-size: 12px;
   }
-  .about-block > div p {
+  .about-block > div:first-child p {
     font-size: 12px;
   }
   .about-block > div:last-child {
@@ -2391,7 +2401,7 @@ body {
     height: 98px;
     margin-bottom: 10px;
   }
-  .about-block > div:last-child > div:last-child span {
+  .about-block > div:last-child > div:last-child p {
     font-size: 13px;
   }
   .about-block strong {
