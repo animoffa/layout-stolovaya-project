@@ -2377,7 +2377,7 @@ body {
   .about-block div:first-child .h3 {
     font-size: 21px;
   }
-  .about-block > div:first-child {
+  .about-block > div:first-child p {
     font-size: 12px;
   }
   .about-block > div p {
