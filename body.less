@@ -98,7 +98,7 @@
     margin: 70px 0 20px 0;
   }
 
-  & button {
+  & a {
     display: block;
     background-color: @orange;
     padding: 9px 25px;
@@ -108,6 +108,7 @@
     outline: none;
     border: none;
     margin-top: 60px;
+    width: fit-content;
   }
 
   @media @1280 {
@@ -132,30 +133,35 @@
     }
   }
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
   border: 1px solid white;
 }
-.swiper-button-prev:after,.swiper-button-next:after{
+
+.swiper-button-prev:after, .swiper-button-next:after {
   font-size: 30px !important;
 }
+
 .swiper-button-prev, .swiper-button-next {
   color: rgba(255, 255, 255, 0) !important;
   top: 5% !important;
-  height:100% !important;
+  height: 100% !important;
 }
 
 .swiper-button-prev:hover, .swiper-button-next:hover {
   color: rgba(255, 255, 255, 0.41) !important;
-  padding:0 20px;
-  position:absolute;
-  height:100%;
+  padding: 0 20px;
+  position: absolute;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.11);
 }
-.swiper-button-prev:hover{
-  left:0 !important;
+
+.swiper-button-prev:hover {
+  left: 0 !important;
 }
-.swiper-button-next:hover{
-  right:0 !important;
+
+.swiper-button-next:hover {
+  right: 0 !important;
 }
 
 #sale-block__title {
@@ -233,17 +239,21 @@
 }
 
 .news-block {
+
   display: flex;
   padding: 100px 0 0 0;
   justify-content: space-between;
   align-items: center;
 
-  & button {
+  & a {
     font-size: 17px;
     padding: 5px 30px;
     margin-top: 55px;
     border-radius: 30px;
     width: 170px;
+    border:1px solid black;
+    text-align: center;
+
   }
 
   & strong {
@@ -456,18 +466,7 @@
   font-family: @font;
 
 
-  &__title {
-    margin: 10px 0;
-    font-size: 40px;
-    font-weight: 500;
-    font-family: @font;
-
-    @media @1640 {
-      font-size: 37px;
-    }
-  }
-
-  & button {
+  & a {
     border-radius: 50%;
     color: white;
     background-color: black;
@@ -475,22 +474,38 @@
     width: 45px;
     height: 45px;
     margin-top: 30px;
-    border: none;
-    outline: none;
+    text-align: center;
+    padding-top: 10px;
   }
 
-  & span {
+  & p {
     color: #191919;
     font-size: 18px;
     font-weight: 100;
+    margin: 2px 0;
   }
+
+  &__title {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: @font;
+  }
+
+  & .h3 {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: @font;
+  }
+
 
   &__right-side {
     width: 830px;
     padding: 5px 30px 5px 0;
 
-    & > span:last-child{
-      margin-top:20px;
+    & > p:last-child {
+      margin-top: 20px;
       display: none;
     }
   }
@@ -505,17 +520,6 @@
 
     & > div {
       margin: 10px 0;
-    }
-
-    &__title {
-      margin-bottom: 0;
-      font-size: 40px;
-      font-weight: 500;
-      font-family: @font;
-
-      @media @1640 {
-        font-size: 37px;
-      }
     }
   }
 }
@@ -626,7 +630,7 @@
       margin: 50px 0 15px 0;
     }
 
-    & button {
+    & a {
       padding: 6px 15px;
       font-size: 13px;
       margin-top: 50px;
@@ -666,9 +670,11 @@
   .news-block {
     width: 81%;
     margin: 0 auto;
-  &__other-news{
-    padding: 0 0 10px 75px;
-  }
+
+    &__other-news {
+      padding: 0 0 10px 75px;
+    }
+
     & .img {
       min-width: 160px;
       height: 150px;
@@ -695,6 +701,7 @@
         font-size: 16px;
       }
     }
+
   }
 
   .recommend-block {
@@ -706,8 +713,15 @@
     width: 81%;
     margin: 0 auto;
 
-    & div:first-child span {
+    & div:first-child p {
       font-size: 17px;
+    }
+
+    & div:first-child .h3 {
+      margin: 10px 0;
+      font-size: 40px;
+      font-weight: 500;
+      font-family: @font;
     }
   }
 }
@@ -742,7 +756,7 @@
       margin: 35px 0 8px 0;
     }
 
-    & button {
+    & a {
       padding: 5px 13px;
       font-size: 12px;
     }
@@ -811,7 +825,7 @@
         font-size: 12px;
       }
 
-      & button {
+      & a {
         width: 130px;
         font-size: 12px;
         margin-top: 25px;
@@ -907,26 +921,23 @@
     padding: 80px 0 0 0;
 
     &__title {
-      margin: 15px auto 10px auto;
-      font-size: 40px;
-      font-weight: 500;
-      font-family: @font;
+      font-size: 35px;
+    }
 
-      @media @1640 {
-        font-size: 37px;
-      }
+    & div:first-child .h3 {
+      font-size: 35px;
     }
 
     & div:first-child {
 
-      & span {
-        line-height: 60%;
-        font-size: 11px;
+      & p {
+        font-size: 13px;
       }
     }
 
-    & span {
+    & p {
       font-size: 12px;
+      margin: 0;
     }
 
     & > div:last-child {
@@ -941,9 +952,10 @@
       }
     }
 
-    & button {
+    & a {
       width: 35px;
       height: 35px;
+      padding: 5px;
     }
   }
 
@@ -998,7 +1010,7 @@
       margin: 35px 0 8px 0;
     }
 
-    & button {
+    & a {
       margin-top: 30px;
       padding: 3px 10px;
       font-size: 10px;
@@ -1071,7 +1083,7 @@
         font-size: 10px;
       }
 
-      & button {
+      & a {
         width: 100px;
         font-size: 10px;
         margin-top: 15px;
@@ -1168,13 +1180,15 @@
     margin: 0 auto;
     padding: 50px 0 0 0;
 
+    & div:first-child .h3, &__title {
+      font-size: 25px;
+    }
 
     & div:first-child {
-      width: 70%;
+      width: 80%;
 
-      & span {
-        line-height: 60%;
-        font-size: 10px;
+      & p {
+        font-size: 14px;
       }
     }
 
@@ -1182,7 +1196,7 @@
       font-weight: 500;
     }
 
-    & span {
+    & p {
       font-size: 10px;
     }
 
@@ -1198,16 +1212,18 @@
       }
     }
 
-    & button {
+    & a {
       width: 25px;
       height: 25px;
+      padding: 3px;
+      font-size: 12px;
     }
   }
 
   .footer-block {
     padding-top: 70px;
 
-    & span {
+    & p {
       font-size: 10px;
     }
 
@@ -1265,9 +1281,9 @@
       margin: 50px 0 20px 0;
     }
 
-    & button {
-      padding: 15px 40px;
-      font-size: 25px;
+    & a {
+      padding: 14px 37px;
+      font-size: 28px;
       border-radius: 45px;
       margin-top: 40px;
     }
@@ -1388,7 +1404,7 @@
     flex-direction: column-reverse;
     width: 90%;
 
-    &__title {
+    &__title, & div:first-child .h3 {
       font-size: 50px;
     }
 
@@ -1397,7 +1413,7 @@
         width: 100%;
         padding: 0;
 
-        & span {
+        & p {
           font-size: 31.5px;
           line-height: 120%;
           font-weight: 100;
@@ -1408,7 +1424,7 @@
         }
       }
 
-      & span {
+      & p {
         font-size: 30px;
       }
 
@@ -1434,16 +1450,24 @@
       font-weight: 500;
     }
 
-    & button {
+    & a {
       margin-top: 50px;
       width: 100px;
       height: 100px;
       font-size: 40px;
       font-weight: 100;
+      padding: 20px;
     }
 
-    &__mobile-invisible {
-      display: none;
+    & .p {
+      margin: 10px 0;
+      font-size: 40px;
+      font-weight: 500;
+      font-family: @font;
+
+      @media @1640 {
+        font-size: 37px;
+      }
     }
   }
 
@@ -1575,6 +1599,10 @@
     font-size: 32px;
   }
 
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 20px !important;
+  }
+
   .sale-block {
     height: 300px;
 
@@ -1678,7 +1706,7 @@
       font-size: 14px;
     }
 
-    & button {
+    & a {
       margin-top: 50px;
       padding: 10px 20px;
       font-size: 20px;
@@ -1696,14 +1724,14 @@
   .about-block {
     padding-top: 50px;
 
-    &__title {
+    &__title, & div:first-child .h3 {
       font-size: 30px;
     }
 
     & > div {
       &:first-child {
 
-        & span {
+        & p {
           font-size: 19px;
         }
       }
@@ -1733,11 +1761,12 @@
       font-weight: 500;
     }
 
-    & button {
+    & a {
       margin-top: 20px;
       width: 60px;
       height: 60px;
       font-size: 20px;
+      padding: 15px;
     }
 
     &__mobile-invisible {
@@ -1780,10 +1809,42 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 415px) {
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 18px !important;
+  }
+
+
   .swiper-slide {
     & > div {
-      padding: 30px 2px 35px 10px;
+      padding: 50px 0px 50px 15px;
+    }
+
+    &__title {
+      font-family: @font;
+      font-weight: 500;
+      margin: 0 5px;
+      font-size: 30px;
+    }
+
+    & span:first-child, span {
+      font-size: 14px;
+    }
+
+    & a {
+      padding: 8px 18px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 10px !important;
+  }
+
+  .swiper-slide {
+    & > div {
+      padding: 35px 2px 55px 10px;
     }
 
     & span:first-child, span {
@@ -1791,7 +1852,7 @@
     }
 
     & img {
-      min-width: 120px;
+      min-width: 105px;
     }
 
     &__title {
@@ -1799,10 +1860,10 @@
       margin: 20px 0 7px 0;
     }
 
-    & button {
+    & a {
       padding: 5px 15px;
       font-size: 13px;
-      margin-top: 20px;
+      margin-top: 16px;
     }
   }
 
@@ -1881,19 +1942,16 @@
   .about-block {
     padding-top: 30px;
 
-    &__title {
+    &__title, & div:first-child .h3 {
       font-size: 21px;
     }
 
     & > div {
       &:first-child {
-
-        & span {
-          font-size: 12px;
-        }
+        font-size: 12px;
       }
 
-      & span {
+      & p {
         font-size: 12px;
       }
 
@@ -1917,11 +1975,12 @@
       font-size: 16px;
     }
 
-    & button {
+    & a {
       margin-top: 10px;
       width: 40px;
       height: 40px;
       font-size: 15px;
+      padding: 10px;
     }
 
     &__mobile-invisible {
@@ -1966,5 +2025,14 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 320px) {
+  .swiper-slide {
+    &__title {
+      font-size: 17px;
+      margin: 20px 0 7px 0;
+    }
   }
 }

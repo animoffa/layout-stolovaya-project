@@ -146,10 +146,11 @@ body {
   border-bottom: 1px solid #ffaf2d;
   outline: none;
 }
-#phone-hover > div form button {
+#phone-hover > div form a {
   width: 135px;
   height: 45px;
   color: white;
+  padding-top: 11px;
   background-color: #ffaf2d;
   border-radius: 25px;
   font-size: 16px;
@@ -310,31 +311,34 @@ body {
   outline: none;
   border: none;
 }
-.search-block__search button {
+.search-block__search a {
   height: 35px;
   border: 0;
   margin: 0 1px;
 }
-.search-block__search button:focus {
+.search-block__search a:focus {
   outline: none;
   border: none;
 }
-.search-block__search a:last-child button {
+.search-block__search a:last-child {
   background-color: #ffaf2d;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   width: 50px;
   margin: 0;
+  padding-top: 4px;
 }
-.search-block__search a:last-child button img {
+.search-block__search a:last-child img {
   width: 23px;
   height: 23px;
-  padding-top: 2px;
 }
-.search-block__search a:first-child button {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+.search-block__search a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   width: 65px;
+  padding: 7px;
+  font-family: "MyriadPro", sans-serif;
+  background-color: #efefef;
 }
 .categories-block_mobile {
   display: none;
@@ -429,7 +433,7 @@ body {
   font-weight: 100;
   width: max-content;
 }
-.categories__hot-hover > div:last-child button {
+.categories__hot-hover > div:last-child a {
   background-color: #ffaf2d;
   color: white;
   width: 130px;
@@ -439,6 +443,9 @@ body {
   outline: none;
   border: none;
   font-size: 17px;
+  text-align: center;
+  padding-top: 6px;
+  font-family: "MyriadPro", sans-serif;
   font-weight: 100;
 }
 .categories__hot-hover__title {
@@ -922,7 +929,7 @@ body {
   font-size: 36px;
   margin: 70px 0 20px 0;
 }
-.swiper-slide button {
+.swiper-slide a {
   display: block;
   background-color: #ffaf2d;
   padding: 9px 25px;
@@ -932,6 +939,7 @@ body {
   outline: none;
   border: none;
   margin-top: 60px;
+  width: fit-content;
 }
 @media (max-width:1280px) {
   .swiper-slide img {
@@ -1053,12 +1061,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.news-block button {
+.news-block a {
   font-size: 17px;
   padding: 5px 30px;
   margin-top: 55px;
   border-radius: 30px;
   width: 170px;
+  border: 1px solid black;
+  text-align: center;
 }
 .news-block strong {
   font-size: 24px;
@@ -1230,18 +1240,7 @@ body {
   width: 100%;
   font-family: "MyriadPro", sans-serif;
 }
-.about-block__title {
-  margin: 10px 0;
-  font-size: 40px;
-  font-weight: 500;
-  font-family: "MyriadPro", sans-serif;
-}
-@media (max-width:1640px) {
-  .about-block__title {
-    font-size: 37px;
-  }
-}
-.about-block button {
+.about-block a {
   border-radius: 50%;
   color: white;
   background-color: black;
@@ -1249,19 +1248,32 @@ body {
   width: 45px;
   height: 45px;
   margin-top: 30px;
-  border: none;
-  outline: none;
+  text-align: center;
+  padding-top: 10px;
 }
-.about-block span {
+.about-block p {
   color: #191919;
   font-size: 18px;
   font-weight: 100;
+  margin: 2px 0;
+}
+.about-block__title {
+  margin: 10px 0;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "MyriadPro", sans-serif;
+}
+.about-block .h3 {
+  margin: 10px 0;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "MyriadPro", sans-serif;
 }
 .about-block__right-side {
   width: 830px;
   padding: 5px 30px 5px 0;
 }
-.about-block__right-side > span:last-child {
+.about-block__right-side > p:last-child {
   margin-top: 20px;
   display: none;
 }
@@ -1274,17 +1286,6 @@ body {
 }
 .about-block__left-side > div {
   margin: 10px 0;
-}
-.about-block__left-side__title {
-  margin-bottom: 0;
-  font-size: 40px;
-  font-weight: 500;
-  font-family: "MyriadPro", sans-serif;
-}
-@media (max-width:1640px) {
-  .about-block__left-side__title {
-    font-size: 37px;
-  }
 }
 .footer-block {
   display: flex;
@@ -1375,7 +1376,7 @@ body {
     font-size: 30px;
     margin: 50px 0 15px 0;
   }
-  .swiper-slide button {
+  .swiper-slide a {
     padding: 6px 15px;
     font-size: 13px;
     margin-top: 50px;
@@ -1436,8 +1437,14 @@ body {
     width: 81%;
     margin: 0 auto;
   }
-  .about-block div:first-child span {
+  .about-block div:first-child p {
     font-size: 17px;
+  }
+  .about-block div:first-child .h3 {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "MyriadPro", sans-serif;
   }
 }
 @media (max-width:1460px) {
@@ -1464,7 +1471,7 @@ body {
     font-size: 25px;
     margin: 35px 0 8px 0;
   }
-  .swiper-slide button {
+  .swiper-slide a {
     padding: 5px 13px;
     font-size: 12px;
   }
@@ -1516,7 +1523,7 @@ body {
   .news-block > div:first-child span {
     font-size: 12px;
   }
-  .news-block > div:first-child button {
+  .news-block > div:first-child a {
     width: 130px;
     font-size: 12px;
     margin-top: 25px;
@@ -1590,17 +1597,17 @@ body {
     padding: 80px 0 0 0;
   }
   .about-block__title {
-    margin: 15px auto 10px auto;
-    font-size: 40px;
-    font-weight: 500;
-    font-family: "MyriadPro", sans-serif;
+    font-size: 35px;
   }
-  .about-block div:first-child span {
-    line-height: 60%;
-    font-size: 11px;
+  .about-block div:first-child .h3 {
+    font-size: 35px;
   }
-  .about-block span {
+  .about-block div:first-child p {
+    font-size: 13px;
+  }
+  .about-block p {
     font-size: 12px;
+    margin: 0;
   }
   .about-block > div:last-child {
     width: fit-content;
@@ -1612,9 +1619,10 @@ body {
   .about-block > div:last-child img {
     width: 105px;
   }
-  .about-block button {
+  .about-block a {
     width: 35px;
     height: 35px;
+    padding: 5px;
   }
   .footer-block {
     padding-top: 100px;
@@ -1624,11 +1632,6 @@ body {
   }
   .footer-block > div strong {
     font-size: 15px;
-  }
-}
-@media (max-width:1460px) and (max-width:1640px) {
-  .about-block__title {
-    font-size: 37px;
   }
 }
 @media (max-width:1280px) {
@@ -1662,7 +1665,7 @@ body {
     font-size: 18px;
     margin: 35px 0 8px 0;
   }
-  .swiper-slide button {
+  .swiper-slide a {
     margin-top: 30px;
     padding: 3px 10px;
     font-size: 10px;
@@ -1717,7 +1720,7 @@ body {
   .news-block > div:first-child span {
     font-size: 10px;
   }
-  .news-block > div:first-child button {
+  .news-block > div:first-child a {
     width: 100px;
     font-size: 10px;
     margin-top: 15px;
@@ -1791,17 +1794,20 @@ body {
     margin: 0 auto;
     padding: 50px 0 0 0;
   }
-  .about-block div:first-child {
-    width: 70%;
+  .about-block div:first-child .h3,
+  .about-block__title {
+    font-size: 25px;
   }
-  .about-block div:first-child span {
-    line-height: 60%;
-    font-size: 10px;
+  .about-block div:first-child {
+    width: 80%;
+  }
+  .about-block div:first-child p {
+    font-size: 14px;
   }
   .about-block strong {
     font-weight: 500;
   }
-  .about-block span {
+  .about-block p {
     font-size: 10px;
   }
   .about-block > div:last-child {
@@ -1814,14 +1820,16 @@ body {
   .about-block > div:last-child img {
     width: 80px;
   }
-  .about-block button {
+  .about-block a {
     width: 25px;
     height: 25px;
+    padding: 3px;
+    font-size: 12px;
   }
   .footer-block {
     padding-top: 70px;
   }
-  .footer-block span {
+  .footer-block p {
     font-size: 10px;
   }
   .footer-block > div:first-child {
@@ -1867,9 +1875,9 @@ body {
     font-size: 37px;
     margin: 50px 0 20px 0;
   }
-  .swiper-slide button {
-    padding: 15px 40px;
-    font-size: 25px;
+  .swiper-slide a {
+    padding: 14px 37px;
+    font-size: 28px;
     border-radius: 45px;
     margin-top: 40px;
   }
@@ -1961,14 +1969,15 @@ body {
     flex-direction: column-reverse;
     width: 90%;
   }
-  .about-block__title {
+  .about-block__title,
+  .about-block div:first-child .h3 {
     font-size: 50px;
   }
   .about-block > div:first-child {
     width: 100%;
     padding: 0;
   }
-  .about-block > div:first-child span {
+  .about-block > div:first-child p {
     font-size: 31.5px;
     line-height: 120%;
     font-weight: 100;
@@ -1976,7 +1985,7 @@ body {
   .about-block > div:first-child__title {
     margin-bottom: 50px;
   }
-  .about-block > div span {
+  .about-block > div p {
     font-size: 30px;
   }
   .about-block > div:last-child {
@@ -1996,15 +2005,19 @@ body {
     font-size: 40px;
     font-weight: 500;
   }
-  .about-block button {
+  .about-block a {
     margin-top: 50px;
     width: 100px;
     height: 100px;
     font-size: 40px;
     font-weight: 100;
+    padding: 20px;
   }
-  .about-block__mobile-invisible {
-    display: none;
+  .about-block .p {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "MyriadPro", sans-serif;
   }
   #sale-block__title {
     font-size: 48px;
@@ -2102,9 +2115,18 @@ body {
     background-color: rgba(255, 255, 255, 0) !important;
   }
 }
+@media (max-width:1000px) and (max-width:1640px) {
+  .about-block .p {
+    font-size: 37px;
+  }
+}
 @media (max-width: 630px) {
   #sale-block__title {
     font-size: 32px;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 20px !important;
   }
   .sale-block {
     height: 300px;
@@ -2179,7 +2201,7 @@ body {
   .swiper-slide span {
     font-size: 14px;
   }
-  .swiper-slide button {
+  .swiper-slide a {
     margin-top: 50px;
     padding: 10px 20px;
     font-size: 20px;
@@ -2193,10 +2215,11 @@ body {
   .about-block {
     padding-top: 50px;
   }
-  .about-block__title {
+  .about-block__title,
+  .about-block div:first-child .h3 {
     font-size: 30px;
   }
-  .about-block > div:first-child span {
+  .about-block > div:first-child p {
     font-size: 19px;
   }
   .about-block > div span {
@@ -2218,11 +2241,12 @@ body {
     font-size: 25px;
     font-weight: 500;
   }
-  .about-block button {
+  .about-block a {
     margin-top: 20px;
     width: 60px;
     height: 60px;
     font-size: 20px;
+    padding: 15px;
   }
   .about-block__mobile-invisible {
     display: none;
@@ -2250,25 +2274,51 @@ body {
     font-size: 25px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 415px) {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 18px !important;
+  }
   .swiper-slide > div {
-    padding: 30px 2px 35px 10px;
+    padding: 50px 0px 50px 15px;
+  }
+  .swiper-slide__title {
+    font-family: "MyriadPro", sans-serif;
+    font-weight: 500;
+    margin: 0 5px;
+    font-size: 30px;
+  }
+  .swiper-slide span:first-child,
+  .swiper-slide span {
+    font-size: 14px;
+  }
+  .swiper-slide a {
+    padding: 8px 18px;
+  }
+}
+@media (max-width: 350px) {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 10px !important;
+  }
+  .swiper-slide > div {
+    padding: 35px 2px 55px 10px;
   }
   .swiper-slide span:first-child,
   .swiper-slide span {
     font-size: 12px;
   }
   .swiper-slide img {
-    min-width: 120px;
+    min-width: 105px;
   }
   .swiper-slide__title {
     font-size: 19px;
     margin: 20px 0 7px 0;
   }
-  .swiper-slide button {
+  .swiper-slide a {
     padding: 5px 15px;
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .sale-block {
     height: 200px;
@@ -2323,13 +2373,14 @@ body {
   .about-block {
     padding-top: 30px;
   }
-  .about-block__title {
+  .about-block__title,
+  .about-block div:first-child .h3 {
     font-size: 21px;
   }
-  .about-block > div:first-child span {
+  .about-block > div:first-child {
     font-size: 12px;
   }
-  .about-block > div span {
+  .about-block > div p {
     font-size: 12px;
   }
   .about-block > div:last-child {
@@ -2347,11 +2398,12 @@ body {
     margin: 14px 0 0 0;
     font-size: 16px;
   }
-  .about-block button {
+  .about-block a {
     margin-top: 10px;
     width: 40px;
     height: 40px;
     font-size: 15px;
+    padding: 10px;
   }
   .about-block__mobile-invisible {
     display: none;
@@ -2382,6 +2434,12 @@ body {
   .footer-block > div:last-child div {
     margin: 10px 0 0 0;
     font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .swiper-slide__title {
+    font-size: 17px;
+    margin: 20px 0 7px 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

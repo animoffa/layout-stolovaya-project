@@ -166,10 +166,11 @@ body {
         outline: none;
       }
 
-      & button {
+      & a {
         width: 135px;
         height: 45px;
         color: white;
+        padding-top: 11px;
         background-color: @orange;
         border-radius: 25px;
         font-size: 16px;
@@ -370,7 +371,7 @@ body {
       }
     }
 
-    & button {
+    & a {
       height: 35px;
       border: 0;
       margin: 0 1px;
@@ -382,24 +383,27 @@ body {
 
     }
 
-    & a:last-child button {
+    & a:last-child  {
       background-color: @orange;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
       width: 50px;
       margin: 0;
+      padding-top: 4px;
 
       & img {
         width: 23px;
         height: 23px;
-        padding-top: 2px;
       }
     }
 
-    & a:first-child button {
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
+    & a:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
       width: 65px;
+      padding:7px;
+      font-family: @font;
+      background-color:#efefef;
 
     }
   }
@@ -516,7 +520,7 @@ body {
       width: max-content;
     }
 
-    & button {
+    & a {
       background-color: @orange;
       color: white;
       width: 130px;
@@ -526,6 +530,9 @@ body {
       outline: none;
       border: none;
       font-size: 17px;
+      text-align:center;
+      padding-top:6px;
+      font-family: @font;
       font-weight: 100;
     }
   }
