@@ -339,6 +339,9 @@ body {
 .categories-block_mobile {
   display: none;
 }
+.categories-block_mobile span:last-child {
+  color: #777777;
+}
 #close-form {
   position: relative;
   top: -150px;
@@ -736,6 +739,8 @@ body {
   .search-block__logo span {
     display: inline-block;
     margin-left: 4px;
+    color: #777777;
+    font-family: "MyriadPro", sans-serif;
   }
 }
 @media (max-width: 730px) {
@@ -946,13 +951,32 @@ body {
     margin: 60px;
   }
 }
+.swiper-pagination-bullet {
+  border: 1px solid white;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 30px !important;
+}
 .swiper-button-prev,
 .swiper-button-next {
   color: rgba(255, 255, 255, 0) !important;
+  top: 5% !important;
+  height: 100% !important;
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: rgba(255, 255, 255, 0.47) !important;
+  color: rgba(255, 255, 255, 0.41) !important;
+  padding: 0 20px;
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.swiper-button-prev:hover {
+  left: 0 !important;
+}
+.swiper-button-next:hover {
+  right: 0 !important;
 }
 #sale-block__title {
   font-family: "MyriadPro", sans-serif;
@@ -988,6 +1012,7 @@ body {
 }
 .sale-block * {
   margin: 5px 5px 5px 27px;
+  font-family: "MyriadPro", sans-serif;
 }
 .sale-block span:last-child {
   margin: 20px 0 46px 27px;
@@ -1079,7 +1104,7 @@ body {
   margin-top: 17px;
 }
 .news-block__other-news {
-  padding: 0 0 0 105px;
+  padding: 0 0 80px 105px;
 }
 .news-block__other-news > div {
   display: flex;
@@ -1168,10 +1193,10 @@ body {
   display: flex;
   background-color: black;
   color: white;
-  height: 420px;
+  height: 415px;
   max-width: 790px;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .recommend-block__second-product strong {
   width: 100px;
@@ -1234,6 +1259,9 @@ body {
 .about-block__right-side {
   width: 830px;
   padding: 5px 30px 5px 0;
+}
+.about-block__right-side > span:last-child {
+  display: none;
 }
 .about-block__left-side {
   width: 255px;
@@ -1376,6 +1404,9 @@ body {
   .news-block {
     width: 81%;
     margin: 0 auto;
+  }
+  .news-block__other-news {
+    padding: 0 0 10px 75px;
   }
   .news-block .img {
     min-width: 160px;
@@ -2058,6 +2089,15 @@ body {
   }
   .targeted-offers-block {
     display: none;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: rgba(255, 255, 255, 0.85) !important;
+    top: 49% !important;
+  }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 0) !important;
   }
 }
 @media (max-width: 630px) {

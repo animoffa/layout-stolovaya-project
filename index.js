@@ -33,4 +33,8 @@ $(document).ready(() => {
         $(`.footer-block__info-section:eq(${ind}) .footer-block__info-mobile span:first-child`).toggle();
         $(`.footer-block__info-section:eq(${ind}) .footer-block__info-mobile span:last-child`).toggle();
     })
+    $('.about-block__right-side button').click(function() {
+        $('.about-block__right-side span:last-child').css({"display": "initial"});
+        $('.about-block__right-side button').css({"display":"none"})
+    })
 })
